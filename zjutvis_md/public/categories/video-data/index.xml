@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video-data on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/categories/video-data/</link>
+    <description>Recent content in video-data on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 01 Sep 2022 21:00:00 +0000</lastBuildDate><atom:link href="http://www.zjutvis.org/categories/video-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>视频数据可视分析</title>
+      <link>http://www.zjutvis.org/research/video-data/</link>
+      <pubDate>Thu, 01 Sep 2022 21:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/video-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MUSE: Visual Analysis of Musical Semantic Sequence</title>
+      <link>http://www.zjutvis.org/publication/chang2022muse/</link>
+      <pubDate>Wed, 01 Jun 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/chang2022muse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AFExplorer: Visual analysis and interactive selection of audio features</title>
+      <link>http://www.zjutvis.org/publication/wang2022afexplorer/</link>
+      <pubDate>Sun, 17 Apr 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/wang2022afexplorer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SurVizor: Visualizing and Understanding the Key Content of Surveillance Videos</title>
+      <link>http://www.zjutvis.org/publication/sun2021survizor/</link>
+      <pubDate>Tue, 09 Nov 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2021survizor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vector Field Streamline Clustering Framework for Brain Fiber Tract Segmentation</title>
+      <link>http://www.zjutvis.org/publication/xu2021vector/</link>
+      <pubDate>Mon, 05 Jul 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/xu2021vector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSumVis: Interactive Visual Understanding and Diagnosis of Video Summarization Model</title>
+      <link>http://www.zjutvis.org/publication/sun2021vsumvis/</link>
+      <pubDate>Thu, 20 May 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2021vsumvis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EvoSets: Tracking the Sensitivity of Dimensionality Reduction Results Across Subspaces</title>
+      <link>http://www.zjutvis.org/publication/sun2021evosets/</link>
+      <pubDate>Wed, 19 May 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2021evosets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PermVizor: Visual Analysis of Multivariate Permutations</title>
+      <link>http://www.zjutvis.org/publication/permvizor/</link>
+      <pubDate>Wed, 12 Jun 2019 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/permvizor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Looking Into Saliency Model via Space-Time Visualization</title>
+      <link>http://www.zjutvis.org/publication/liang2016looking/</link>
+      <pubDate>Thu, 01 Dec 2016 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/liang2016looking/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

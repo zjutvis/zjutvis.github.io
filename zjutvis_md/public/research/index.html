@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ZJUTVIS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="This is meta description.">
+  <meta name="keywords" content="">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="ZJUT VIS">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/element_ui/index.min.css" integrity="" media="screen">
+
+  <link rel="alternate" type="application/rss+xml" href="http://www.zjutvis.org/research/index.xml" title="ZJUTVIS" />
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/mailgo/mailgo.min.js" defer></script>
+
+  <script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/element-ui/index.js"></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/biglogo.svg" type="image/x-icon">
+
+
+</head>
+<body class="research">
+    <div class="wrapper"><style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> 首页
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/research">科研成果</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/publication">科研论文</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/members">成员</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">简介</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://www.zjutvis.org/"> 首页 </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/research">科研成果</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/publication">科研论文</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/members">成员</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">简介</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+ 
+
+<section class="uk-margin-large-bottom">
+        <h1 class="uk-heading-medium uk-text-center">科研成果</h1>
+</section>
+
+
+
+<section>
+    <div class="uk-container uk-margin-xlarge-bottom">
+        <div uk-filter="target: .js-filter">
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul
+                    class="js-filter uk-child-width-1-1 uk-child-width-1-3@m uk-text-center"
+                    uk-grid
+                    uk-height-match="target: > li > div > .fixy"
+            >
+                
+                <li data-tags="在科技部中小企业中欧国际合作项目、浙江省杰青等项目的资助下，围绕城市时空定位数据中普遍存在的视觉混乱、认知负担及模式表达效率低下等关键科学问题，重点研究城市时空定位数据中的无遮挡呈现、轨迹数据挖掘以及时空数据实时交互、可视分析等方面的关键技术和方法。相关成果发表于IEEE TVCG、IEEE PVIS、JCST等，获2018年度浙江省科技进步奖一等奖、中国可视化与可视分析大会最佳综述论文等，代表性技术应用于行业龙头企业等。322022-09-01 23:00:00 &#43;0000 UTC32false32False3232false322022-09-01 23:00:00 &#43;0000 UTC32322022-09-01 23:00:00 &#43;0000 UTC32时空数据可视分析32research32/research/spatio-temporal/32">
+                    <div class="uk-card uk-card-default" style="position: relative;">
+                        <div class="fixy">
+                            <div class="uk-card-media-top">
+
+
+
+
+
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">时空数据可视分析</h3>
+
+
+                            </div>
+                        </div>
+
+                        <div class="uk-card-footer">
+                            <a href="/research/spatio-temporal/" class="uk-button uk-button-text"
+                            >Read more</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                
+                <li data-tags="在国家自然科学基金面上项目、浙江省重点研发计划课题等资助下，围绕文本数据分析中普遍存在的非结构化语义数据不确定性普遍存在、时空事件难以确定、时空传播难以量化等关键科学问题展开研究，重点攻关时空语义数据中时空事件建模、事件发现和话题跟踪、流数据分析等方面的关键技术和方法。相关成果发表于IEEE TVCG、ACM TIST、IEEE CG&A等，获中国可视化和可视分析竞赛一等奖、二等奖和中国可视化与可视分析大会最佳综述论文等。322022-09-01 22:00:00 &#43;0000 UTC32false32False3232false322022-09-01 22:00:00 &#43;0000 UTC32322022-09-01 22:00:00 &#43;0000 UTC32文本数据可视分析32research32/research/text-data/32">
+                    <div class="uk-card uk-card-default" style="position: relative;">
+                        <div class="fixy">
+                            <div class="uk-card-media-top">
+
+
+
+
+
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">文本数据可视分析</h3>
+
+
+                            </div>
+                        </div>
+
+                        <div class="uk-card-footer">
+                            <a href="/research/text-data/" class="uk-button uk-button-text"
+                            >Read more</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                
+                <li data-tags="在国家自然科学基金重点项目等资助下，围绕跨设备多场景视频的快速理解展开研究。具体探索如何将“人在回路”强关联至视频语义模型的理解，充分利用可视分析技术并在内容理解中融合用户意图，提出了多粒度精细化可视分析、面向多层级多特征的可解释可视分析等系列方法，相关成果发表于IEEE TVCG、TMM、TBD、ACM TIST等，获得中国可视化与可视分析大会最佳论文提名奖等。322022-09-01 21:00:00 &#43;0000 UTC32false32False3232false322022-09-01 21:00:00 &#43;0000 UTC32322022-09-01 21:00:00 &#43;0000 UTC32视频数据可视分析32research32/research/video-data/32">
+                    <div class="uk-card uk-card-default" style="position: relative;">
+                        <div class="fixy">
+                            <div class="uk-card-media-top">
+
+
+
+
+
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">视频数据可视分析</h3>
+
+
+                            </div>
+                        </div>
+
+                        <div class="uk-card-footer">
+                            <a href="/research/video-data/" class="uk-button uk-button-text"
+                            >Read more</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media screen and (max-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .paper-picture {
+            width: fit-content;
+            height: auto;
+            align-self: center;
+        }
+    }
+    @media screen and (min-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .paper-picture {
+            width: 320px;
+            height: 180px;
+            margin-right: 15px;
+        }
+    }
+    .paper-title {
+        text-align: left;
+        font-size: 1.7rem;
+        font-weight: 500;
+        width: fit-content;
+        color:rgb(83,83,83);
+    }
+    .paper-title:hover{
+        color:rgb(83,83,83);
+        text-decoration: underline;
+    }
+    .paper-authors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: -webkit-fill-available;
+    }
+    .paper-venue{
+    }
+    .paper-author {
+        color: #4b4f56;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .paper-author:hover {
+        text-decoration: underline;
+        color: #4b4f56;
+    }
+    .paper-reference {
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .down-div {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+
+</style>
+
+
+    </div>
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:guodao@zjut.edu.cn">guodao [at] zjut.edu.cn</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="https://map.baidu.com/search/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E7%95%99%E5%92%8C%E8%B7%AF288%E5%8F%B7%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%B1%8F%E5%B3%B0%E6%A0%A1%E5%8C%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E6%A5%BCc516/" data-caption="浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516"
+                       data-type="iframe">浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            ZJUT VIS
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.js"></script>
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+</body>
+</html>

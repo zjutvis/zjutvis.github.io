@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spatio-temporal on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/categories/spatio-temporal/</link>
+    <description>Recent content in spatio-temporal on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 01 Sep 2022 23:00:00 +0000</lastBuildDate><atom:link href="http://www.zjutvis.org/categories/spatio-temporal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>时空数据可视分析</title>
+      <link>http://www.zjutvis.org/research/spatio-temporal/</link>
+      <pubDate>Thu, 01 Sep 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/spatio-temporal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>流行病数据可视分析综述</title>
+      <link>http://www.zjutvis.org/publication/sun2022epidemic/</link>
+      <pubDate>Thu, 14 Apr 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2022epidemic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Survey of Volume Visualization Techniques for Feature Enhancement</title>
+      <link>http://www.zjutvis.org/publication/xu2021survey/</link>
+      <pubDate>Thu, 23 Sep 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/xu2021survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高密度群体轨迹数据的微观可视分析</title>
+      <link>http://www.zjutvis.org/publication/highdensity/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/highdensity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>基于二阶优化的地图重构算法</title>
+      <link>http://www.zjutvis.org/publication/MapReconstruction/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/MapReconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TZVis: Visual Analysis of Bicycle Data for Traffic Zone Division</title>
+      <link>http://www.zjutvis.org/publication/tzvis/</link>
+      <pubDate>Thu, 19 Dec 2019 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/tzvis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AtoMixer: Atom-based interactive visual exploration of traffic surveillance data</title>
+      <link>http://www.zjutvis.org/publication/sun2019atomixer/</link>
+      <pubDate>Tue, 19 Mar 2019 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2019atomixer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>基于空间区域功能划分的人群移动模式可视分析</title>
+      <link>http://www.zjutvis.org/publication/HumanMovement/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/HumanMovement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RectMap: A Boundary-Reserved Map Deformation Approach for Visualizing Geographical Map</title>
+      <link>http://www.zjutvis.org/publication/sun2018rectmap/</link>
+      <pubDate>Sun, 10 Jun 2018 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2018rectmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DiffusionInsighter: Visual Analysis of Traffic Diffusion Flow Patterns</title>
+      <link>http://www.zjutvis.org/publication/liu2018diffusioninsighter/</link>
+      <pubDate>Sat, 19 May 2018 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/liu2018diffusioninsighter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedding Spatio-Temporal Information into Maps by Route-Zooming</title>
+      <link>http://www.zjutvis.org/publication/sun2017embedding/</link>
+      <pubDate>Thu, 01 Jun 2017 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2017embedding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>基于城市群的空气质量数据的可视分析方法研究</title>
+      <link>http://www.zjutvis.org/publication/citygroup/</link>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/citygroup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter</title>
+      <link>http://www.zjutvis.org/publication/traveldiff/</link>
+      <pubDate>Thu, 10 Mar 2016 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/traveldiff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>出租车GPS大数据的道路行车可视分析</title>
+      <link>http://www.zjutvis.org/publication/TaxiGPS/</link>
+      <pubDate>Mon, 15 Dec 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/TaxiGPS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedding Temporal Display into Maps for Occlusion-Free Visualization of Spatio-Temporal Data</title>
+      <link>http://www.zjutvis.org/publication/sun2014embedding/</link>
+      <pubDate>Thu, 01 May 2014 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2014embedding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Survey of Visual Analytics Techniques and Applications: State-of-the-Art Research and Future Challenges</title>
+      <link>http://www.zjutvis.org/publication/sun2013survey/</link>
+      <pubDate>Mon, 09 Sep 2013 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2013survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Web-based visual analytics system for real estate data</title>
+      <link>http://www.zjutvis.org/publication/sun2013web/</link>
+      <pubDate>Sat, 01 Jun 2013 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2013web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

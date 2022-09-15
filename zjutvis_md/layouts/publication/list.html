@@ -1,0 +1,205 @@
+{{ define "main" }} {{ partial "page-title.html" . }}
+
+<section>
+    <div class="uk-container uk-margin-xlarge-bottom">
+        <div uk-filter="target: .js-filter">
+            <ul class="uk-subnav uk-subnav-pill uk-subnav-divider">
+                <li uk-filter-control><a href="#">All</a></li>
+                {{ range .Site.Data.publication.filter }}
+
+                <li uk-filter-control="[data-tags*='{{.value}}']">
+                    <a href="#">{{.label}}</a>
+                </li>
+
+                {{end}}
+            </ul>
+            {{$name2url := dict}}
+            {{range .Site.Pages}}
+            {{if eq .Params.type "people"}}
+            {{$temp := dict .Params.en_name .Params.url}}
+            {{$temp1 := dict .Params.name .Params.url}}
+            {{$name2url = merge $name2url $temp}}
+            {{$name2url = merge $name2url $temp1}}
+            {{end}}
+            {{end}}
+            <div class="down-div">
+                <ul
+                        class="js-filter uk-grid uk-grid-stack uk-child-width-1-1"
+                        uk-grid
+                        uk-height-match="target: > li > div > .fixy" >
+                    {{ range .Data.Pages }}
+                    <li data-tags="{{delimit .Params.categories  ' '}}"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="{{.Params.url}}">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.Params.image}}">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="{{.Params.url}}" class="paper-title">
+                                        {{.Params.title}}
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    {{ range .Params.author}}
+                                    {{$url := index $name2url .name}}
+                                    <div class="paper-author">
+                                        {{if $url}}
+                                        <a class="paper-author" href="{{$.Site.BaseURL}}{{$url}}">
+                                            {{.name}}
+                                        </a>
+                                        {{else}}
+                                        <a class="paper-author" style="text-decoration:none">{{.name}}</a>
+                                        {{end}}
+                                    </div>
+                                    {{end}}
+                                </div>
+                                <div class="paper-venue">
+                                    {{.Params.journal}}
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.Params.pdf_link}}">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.Params.bib_link}}">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
+            <!--            <ul-->
+            <!--                    class="js-filter uk-child-width-1-1 uk-child-width-1-4@m uk-text-center"-->
+            <!--                    uk-grid-->
+            <!--                    uk-height-match="target: > li > div > .fixy"-->
+            <!--            >-->
+            <!--                {{ range .Data.Pages }}-->
+            <!--                <li data-tags="{{delimit .Params  ' '}}">-->
+            <!--                    <div class="uk-card uk-card-default" style="position: relative;">-->
+            <!--                        <div class="fixy">-->
+            <!--                            <div class="uk-card-media-top">-->
+            <!--                                <img-->
+            <!--                                        class="contain experience"-->
+            <!--                                        src="{{.Params.Image | absURL}}"-->
+            <!--                                        alt=""-->
+            <!--                                />-->
+            <!--                            </div>-->
+            <!--                            <div class="uk-card-body">-->
+            <!--                                <h3 class="uk-card-title">{{.Title}}</h3>-->
+            <!--                                <p>{{.Params.Description}}</p>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+
+            <!--                        <div class="uk-card-footer">-->
+            <!--                            <a href="{{.Permalink| relURL}}" class="uk-button uk-button-text"-->
+            <!--                            >Read more</a-->
+            <!--                            >-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </li>-->
+            <!--                {{end}}-->
+            <!--            </ul>-->
+        </div>
+    </div>
+</section>
+
+<style>
+    @media screen and (max-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .paper-picture {
+            width: fit-content;
+            height: auto;
+            align-self: center;
+        }
+    }
+    @media screen and (min-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .paper-picture {
+            width: 320px;
+            height: 180px;
+            margin-right: 15px;
+        }
+    }
+    .paper-title {
+        text-align: left;
+        font-size: 1.7rem;
+        font-weight: 500;
+        width: fit-content;
+        color:rgb(83,83,83);
+    }
+    .paper-title:hover{
+        color:rgb(83,83,83);
+        text-decoration: underline;
+    }
+    .paper-authors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: -webkit-fill-available;
+    }
+    .paper-venue{
+    }
+    .paper-author {
+        color: #4b4f56;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .paper-author:hover {
+        text-decoration: underline;
+        color: #4b4f56;
+    }
+    .paper-reference {
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .down-div {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+</style>
+
+{{ end }}

@@ -1,0 +1,4152 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ZJUTVIS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="This is meta description about publication.">
+  <meta name="keywords" content="">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="ZJUT VIS">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/element_ui/index.min.css" integrity="" media="screen">
+
+  <link rel="alternate" type="application/rss+xml" href="http://www.zjutvis.org/publication/index.xml" title="ZJUTVIS" />
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/mailgo/mailgo.min.js" defer></script>
+
+  <script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/element-ui/index.js"></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/biglogo.svg" type="image/x-icon">
+
+
+</head>
+<body class="publication">
+    <div class="wrapper"><style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> 首页
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/research">科研成果</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/publication">科研论文</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/members">成员</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">简介</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://www.zjutvis.org/"> 首页 </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/research">科研成果</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/publication">科研论文</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/members">成员</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">简介</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+ 
+
+<section class="uk-margin-large-bottom">
+        <h1 class="uk-heading-medium uk-text-center">科研论文</h1>
+</section>
+
+
+
+<section>
+    <div class="uk-container uk-margin-xlarge-bottom">
+        <div uk-filter="target: .js-filter">
+            <ul class="uk-subnav uk-subnav-pill uk-subnav-divider">
+                <li uk-filter-control><a href="#">All</a></li>
+                
+
+                <li uk-filter-control="[data-tags*='spatio-temporal']">
+                    <a href="#">时空数据可视分析</a>
+                </li>
+
+                
+
+                <li uk-filter-control="[data-tags*='text-data']">
+                    <a href="#">文本数据可视分析</a>
+                </li>
+
+                
+
+                <li uk-filter-control="[data-tags*='video-data']">
+                    <a href="#">视频数据可视分析</a>
+                </li>
+
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="down-div">
+                <ul
+                        class="js-filter uk-grid uk-grid-stack uk-child-width-1-1"
+                        uk-grid
+                        uk-height-match="target: > li > div > .fixy" >
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/chang2022muse/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/chang2022muse.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/chang2022muse/" class="paper-title">
+                                        MUSE: Visual Analysis of Musical Semantic Sequence
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/baofengchang">
+                                            Baofeng Chang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/tongli">
+                                            Tong Li
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/houchaohuang">
+                                            Houchao Huang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Visualization and Computer Graphics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/chang2022muse.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/chang2022muse.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/wang2022afexplorer/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/wang2022afexplorer.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/wang2022afexplorer/" class="paper-title">
+                                        AFExplorer: Visual analysis and interactive selection of audio features
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/leiwang">
+                                            Lei Wang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yunchaowang">
+                                            Yunchao Wang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ji Ma</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Xiaomin Zhao</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Visual Informatics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/wang2022afexplorer.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/wang2022afexplorer.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2022epidemic/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2022epidemic.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2022epidemic/" class="paper-title">
+                                        流行病数据可视分析综述
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yufanyang">
+                                            杨雨璠
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">潘 翔</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计 算 机 学 报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2022epidemic.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2022epidemic.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/EvolutionaryPatterns/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/EvolutionaryPatterns.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/EvolutionaryPatterns/" class="paper-title">
+                                        司法判决文书数据中演化模式的挖掘和可视分析
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/huiwang">
+                                            王慧
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">丁伟杰</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/xiaowang">
+                                            王潇
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yingzhang">
+                                            张颖
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/EvolutionaryPatterns.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/EvolutionaryPatterns.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="web-dev"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/xu2021predictive/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/xu2021predictive.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/xu2021predictive/" class="paper-title">
+                                        A Predictive Visual Analytics System for Studying Neurodegenerative Disease based on DTI Fiber Tracts
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chaoqingxu">
+                                            Chaoqing Xu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Tyson Allan Neuroth</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Takanori Fujiwara</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Kwan-Liu Ma</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Visualization and Computer Graphics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2021survizor/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2021SurVizor.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2021survizor/" class="paper-title">
+                                        SurVizor: Visualizing and Understanding the Key Content of Surveillance Videos
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/tongli">
+                                            Tong Li
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Visualization
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/SurVizor.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/SurVizor.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/xu2021survey/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/xu2021survey.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/xu2021survey/" class="paper-title">
+                                        A Survey of Volume Visualization Techniques for Feature Enhancement
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chaoqingxu">
+                                            Chaoqing Xu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Visual Informatics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/xu2021survey.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/xu2021survey.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/xu2021vector/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/xu2021vector.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/xu2021vector/" class="paper-title">
+                                        Vector Field Streamline Clustering Framework for Brain Fiber Tract Segmentation
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chaoqingxu">
+                                            Chaoqing Xu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Xiufang Xu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Cognitive and Developmental Systems
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/xu2021vector.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/xu2021vector.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/jiang2021dt2vis/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/jiang2021dt2vis.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/jiang2021dt2vis/" class="paper-title">
+                                        DT2VIS: A Focus&#43;Context Answer Generation System to Facilitate Visual Exploration of Tabular Data
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/qijiang">
+                                            Qi Jiang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yuedong">
+                                            Yue Dong
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Computer Graphics and Applications
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/jiang2021dt2vis.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/jiang2021dt2vis.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2021vsumvis/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2021VSumVis.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2021vsumvis/" class="paper-title">
+                                        VSumVis: Interactive Visual Understanding and Diagnosis of Video Summarization Model
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/haowu">
+                                            Hao Wu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/linzhu">
+                                            Lin Zhu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chaoqingxu">
+                                            Chaoqing Xu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Haoran Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Binwei Xu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    ACM Transactions on Intelligent Systems and Technology
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2021VSumVis.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2021VSumVis.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2021evosets/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/evosets.jpeg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2021evosets/" class="paper-title">
+                                        EvoSets: Tracking the Sensitivity of Dimensionality Reduction Results Across Subspaces
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/sujiazhu">
+                                            Sujia Zhu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/qijiang">
+                                            Qi Jiang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/wangxia">
+                                            Wang Xia
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Big Data
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2021evosets.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2021evosets.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/highdensity/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/highdensity.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/highdensity/" class="paper-title">
+                                        高密度群体轨迹数据的微观可视分析
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/sujiazhu">
+                                            朱素佳
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/qijiang">
+                                            江棨
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/wangxia">
+                                            夏旺
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/highdensity.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/highdensity.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/zhu2020survey/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/zhu2020survey.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/zhu2020survey/" class="paper-title">
+                                        A Survey on Automatic Infographics and Visualization Recommendations
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/sujiazhu">
+                                            Sujia Zhu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/qijiang">
+                                            Qi Jiang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/mengzha">
+                                            Meng Zha
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Visual Informatics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/zhu2020survey.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/zhu2020survey.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/MapReconstruction/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/paperimage/MapReconstruction.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/MapReconstruction/" class="paper-title">
+                                        基于二阶优化的地图重构算法
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yunchaowang">
+                                            王云超
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/cangli">
+                                            李藏
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">蒋莉</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/MapReconstruction.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/MapReconstruction.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="web-dev"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/xu2020visual/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/xu2020visual.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/xu2020visual/" class="paper-title">
+                                        Visual Interactive Exploration and Clustering of Brain Fiber Tracts
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chaoqingxu">
+                                            Chaoqing Xu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yipeng Liu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Zhechen Jiang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Li Jiang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Visualization
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/xu2020visual.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/xu2020visual.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/tzvis/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/tzvis.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/tzvis/" class="paper-title">
+                                        TZVis: Visual Analysis of Bicycle Data for Traffic Zone Division
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/baofengchang">
+                                            Baofeng Chang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/linzhu">
+                                            Lin Zhu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/haowu">
+                                            Hao Wu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Kai Zheng</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Visualization
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/TZVis.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun20tzvis19atomixer.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/permvizor/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/permvizor.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/permvizor/" class="paper-title">
+                                        PermVizor: Visual Analysis of Multivariate Permutations
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/zhixiuzhou">
+                                            Zhixiu Zhou
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/baofengchang">
+                                            Baofeng Chang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/jingweitang">
+                                            Jingwei Tang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Visualization
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/PermVizor.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/permvizor.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2019atomixer/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2019atomixer.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2019atomixer/" class="paper-title">
+                                        AtoMixer: Atom-based interactive visual exploration of traffic surveillance data
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yinzhao">
+                                            Yin Zhao
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/dizhoucao">
+                                            Dizhou Cao
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Jianyuan Li</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yipeng Liu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Computer Languages
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2019atomixer.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2019atomixer.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/HumanMovement/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/HumanMovement.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/HumanMovement/" class="paper-title">
+                                        基于空间区域功能划分的人群移动模式可视分析
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/fenliu">
+                                            柳芬
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">蒋莉</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/HumanMovement.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/HumanMovement.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2018rectmap/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2018rectmap.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2018rectmap/" class="paper-title">
+                                        RectMap: A Boundary-Reserved Map Deformation Approach for Visualizing Geographical Map
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/shuangpozhai">
+                                            Shuangpo Zhai
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/sili">
+                                            Si Li
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Chinese Journal of Electronics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2018rectmap.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2018rectmap.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/liu2018diffusioninsighter/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/liu2018diffusioninsighter.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/liu2018diffusioninsighter/" class="paper-title">
+                                        DiffusionInsighter: Visual Analysis of Traffic Diffusion Flow Patterns
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/chunhuiliu">
+                                            Chunhui Liu
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/sili">
+                                            Si Li
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/dizhoucao">
+                                            Dizhou Cao
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Xiaorui Jiang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Chinese Journal of Electronics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/liu2018diffusioninsighter.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/liu2018diffusioninsighter.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/socialwave/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/socialwave.png">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/socialwave/" class="paper-title">
+                                        SocialWave: Visual Analysis of Spatio-temporal Diffusion of Information on Social Media
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Tan Tang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Tai-Quan Peng</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yingcai Wu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    ACM Transactions on Intelligent Systems and Technology
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/socialwave.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/socialwave.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/streamexplorer/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/streamexplorer.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/streamexplorer/" class="paper-title">
+                                        StreamExplorer: A Multi-Stage System for Visually Exploring Events in Social Streams
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yingcai Wu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Zhutian Chen</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Xiao Xie</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Nan Cao</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Shixia Liu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Weiwei Cui</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transaction on Visualization and Computer Graphics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/streamexplorer.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/streamexplorer.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2017embedding/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2017embedding.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2017embedding/" class="paper-title">
+                                        Embedding Spatio-Temporal Information into Maps by Route-Zooming
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Huamin Qu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yingcai Wu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Visualization and Computer Graphics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2017embedding.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2017embedding.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/citygroup/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/citygroup.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/citygroup/" class="paper-title">
+                                        基于城市群的空气质量数据的可视分析方法研究
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/yajuanhu">
+                                            胡亚娟
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">蒋莉</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">姜晓睿</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/citygroup.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/citygroup.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="video-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/liang2016looking/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/liang2016looking.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/liang2016looking/" class="paper-title">
+                                        Looking Into Saliency Model via Space-Time Visualization
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Haoran Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transactions on Multimedia
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/liang2016looking.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/liang2016looking.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/traveldiff/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/TravelDiff.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/traveldiff/" class="paper-title">
+                                        TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Robert Krueger</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Fabian Beck</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Thomas Ertl</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Pacific Visualization Symposium
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/TravelDiff.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/TravelDiff.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/TaxiGPS/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/TaxiGPS.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/TaxiGPS/" class="paper-title">
+                                        出租车GPS大数据的道路行车可视分析
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">何贤国</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">高家全</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">郑春益</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">梁荣华</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/TaxiGPS.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/TaxiGPS.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="text-data"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2014evoriver/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2014evoriver.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2014evoriver/" class="paper-title">
+                                        EvoRiver: Visual Analysis of Topic Coopetition on Social Media
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yingcai Wu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Shixia Liu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Tai-Quan Peng</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Jonathan J. H. Zhu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Transaction on Visualization and Computer Graphics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2014evoriver.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2014evoriver.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2014embedding/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2014embedding.jpeg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2014embedding/" class="paper-title">
+                                        Embedding Temporal Display into Maps for Occlusion-Free Visualization of Spatio-Temporal Data
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yang Liu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Wenbin Wu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Huamin Qu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    IEEE Pacific Visualization Symposium
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2014embedding.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2014embedding.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2013survey/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2013survey.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2013survey/" class="paper-title">
+                                        A Survey of Visual Analytics Techniques and Applications: State-of-the-Art Research and Future Challenges
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Yingcai Wu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Shixia Liu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Journal of Computer Science and Technology
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2013survey.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2013survey.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-tags="spatio-temporal"
+                        class="list-item uk-grid-margin uk-first-column" style="width:100%;">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/sun2013web/">
+                                    <img class="paper-picture"
+                                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2013web.jpeg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/sun2013web/" class="paper-title">
+                                        A Web-based visual analytics system for real estate data
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" href="http://www.zjutvis.org//members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Ronghua Liang</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Fuli Wu</a>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="paper-author">
+                                        
+                                        <a class="paper-author" style="text-decoration:none">Huamin Qu</a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    SCIENCE CHINA Information Sciences
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/sun2013web.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/sun2013web.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+<style>
+    @media screen and (max-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .paper-picture {
+            width: fit-content;
+            height: auto;
+            align-self: center;
+        }
+    }
+    @media screen and (min-width: 650px){
+        .paper-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .paper-content {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .paper-picture {
+            width: 320px;
+            height: 180px;
+            margin-right: 15px;
+        }
+    }
+    .paper-title {
+        text-align: left;
+        font-size: 1.7rem;
+        font-weight: 500;
+        width: fit-content;
+        color:rgb(83,83,83);
+    }
+    .paper-title:hover{
+        color:rgb(83,83,83);
+        text-decoration: underline;
+    }
+    .paper-authors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: -webkit-fill-available;
+    }
+    .paper-venue{
+    }
+    .paper-author {
+        color: #4b4f56;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .paper-author:hover {
+        text-decoration: underline;
+        color: #4b4f56;
+    }
+    .paper-reference {
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .down-div {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+</style>
+
+
+    </div>
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:guodao@zjut.edu.cn">guodao [at] zjut.edu.cn</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="https://map.baidu.com/search/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E7%95%99%E5%92%8C%E8%B7%AF288%E5%8F%B7%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%B1%8F%E5%B3%B0%E6%A0%A1%E5%8C%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E6%A5%BCc516/" data-caption="浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516"
+                       data-type="iframe">浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            ZJUT VIS
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.js"></script>
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+</body>
+</html>

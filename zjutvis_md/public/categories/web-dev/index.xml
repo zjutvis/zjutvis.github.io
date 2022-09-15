@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web-dev on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/categories/web-dev/</link>
+    <description>Recent content in web-dev on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 29 Dec 2021 23:00:00 +0000</lastBuildDate><atom:link href="http://www.zjutvis.org/categories/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Predictive Visual Analytics System for Studying Neurodegenerative Disease based on DTI Fiber Tracts</title>
+      <link>http://www.zjutvis.org/publication/xu2021predictive/</link>
+      <pubDate>Wed, 29 Dec 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/xu2021predictive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Interactive Exploration and Clustering of Brain Fiber Tracts</title>
+      <link>http://www.zjutvis.org/publication/xu2020visual/</link>
+      <pubDate>Thu, 07 May 2020 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/xu2020visual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

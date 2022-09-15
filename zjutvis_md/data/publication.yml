@@ -1,0 +1,7 @@
+filter:
+  - label: 时空数据可视分析
+    value: spatio-temporal
+  - label: 文本数据可视分析
+    value: text-data
+  - label: 视频数据可视分析
+    value: video-data

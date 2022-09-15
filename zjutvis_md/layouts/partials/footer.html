@@ -1,0 +1,59 @@
+<!-- footer -->
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:{{.Site.Params.footer.url}}">{{.Site.Params.footer.email}}</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="{{.Site.Params.footer.googlemaps}}" data-caption="{{.Site.Params.footer.address}}"
+                       data-type="iframe">{{.Site.Params.footer.address}}</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            {{.Site.Params.Author}}
+
+
+        </div>
+    </div>
+</footer>
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+
+<!-- Default Statcounter code for ZJUT VIS
+http://zjutvis.org -->
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+<!-- End of Statcounter Code -->

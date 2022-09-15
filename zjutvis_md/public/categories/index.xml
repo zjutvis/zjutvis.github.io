@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/categories/</link>
+    <description>Recent content in Categories on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 01 Sep 2022 23:01:00 +0000</lastBuildDate><atom:link href="http://www.zjutvis.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>master</title>
+      <link>http://www.zjutvis.org/categories/master/</link>
+      <pubDate>Thu, 01 Sep 2022 23:01:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/master/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spatio-temporal</title>
+      <link>http://www.zjutvis.org/categories/spatio-temporal/</link>
+      <pubDate>Thu, 01 Sep 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/spatio-temporal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text-data</title>
+      <link>http://www.zjutvis.org/categories/text-data/</link>
+      <pubDate>Thu, 01 Sep 2022 22:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/text-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video-data</title>
+      <link>http://www.zjutvis.org/categories/video-data/</link>
+      <pubDate>Thu, 01 Sep 2022 21:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/video-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graduate</title>
+      <link>http://www.zjutvis.org/categories/graduate/</link>
+      <pubDate>Tue, 23 Aug 2022 23:01:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/graduate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web-dev</title>
+      <link>http://www.zjutvis.org/categories/web-dev/</link>
+      <pubDate>Wed, 29 Dec 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/web-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phd</title>
+      <link>http://www.zjutvis.org/categories/phd/</link>
+      <pubDate>Wed, 01 Sep 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>advisor</title>
+      <link>http://www.zjutvis.org/categories/advisor/</link>
+      <pubDate>Sat, 20 Jun 2020 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/categories/advisor/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

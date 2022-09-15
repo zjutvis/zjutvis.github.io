@@ -1,0 +1,9 @@
+filter:
+  - label: 导师
+    value: advisor
+  - label: 博士生
+    value: phd
+  - label: 硕士生
+    value: master
+  - label: 毕业生
+    value: graduate

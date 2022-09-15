@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ZJUTVIS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="博士生">
+  <meta name="keywords" content="">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="ZJUT VIS">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/element_ui/index.min.css" integrity="" media="screen">
+
+  
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/mailgo/mailgo.min.js" defer></script>
+
+  <script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/element-ui/index.js"></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/biglogo.svg" type="image/x-icon">
+
+
+</head>
+<body class="members">
+    <div class="wrapper"><style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> 首页
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/research">科研成果</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/publication">科研论文</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/members">成员</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">简介</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://www.zjutvis.org/"> 首页 </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/research">科研成果</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/publication">科研论文</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/members">成员</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">简介</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<section>
+    
+    <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+        <div class="up-div">
+            <h1 class="big-caption">简介</h1>
+            <div class="intro-div">
+                <div class="left-div">
+                    <img class="round-graph"
+                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/peopleimage/wangyunchao.jpeg">
+                    <div class="small-pic-div">
+                        
+                        <a href="mailto:wyctears@gmail.com" class="url-link">
+                            <img class="small-pic"
+                                 src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/small_icon/gmail.svg">
+                        </a>
+                        
+                        <a href="mailto:ycwang@zjut.edu.cn" class="url-link">
+                            <img class="small-pic"
+                                 src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/small_icon/mail.svg">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="right-div">
+                    <div class="intro-content">王云超，浙江工业大学计算机科学与技术学院博士生。</div>
+                    <div class="right-down-div">
+                        <div class="interests">
+                            <h2>研究兴趣</h2>
+                            <div class="int-tag">
+                                
+                                <span class="interest-content uk-badge">
+                                可视分析
+                                </span>
+                                
+                                <span class="interest-content uk-badge">
+                                信息可视化
+                                </span>
+                                
+                            </div>
+                        </div>
+                        <div class="education">
+                            <h2>教育经历</h2>
+                            <div class="edu-div">
+                                <div class="edu-item">
+                                    <ul>
+                                        
+                                        <li class="edu-content">2017.09-2020.06 浙江工业大学 控制科学与工程 硕士</li>
+                                        
+                                        <li class="edu-content">2020.09-至今 浙江工业大学 计算机科学与技术 博士</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-div">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <h1 class="big-caption">成果</h1>
+            <div class="paper-div">
+                <ul>
+                    
+                    <li class="list-item">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/wang2022afexplorer/">
+                                    <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/wang2022afexplorer.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/wang2022afexplorer/" style="color: rgb(83,83,83);">
+                                        AFExplorer: Visual analysis and interactive selection of audio features
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/leiwang">
+                                            Lei Wang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/guodaosun">
+                                            Guodao Sun
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/yunchaowang">
+                                            Yunchao Wang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56; text-decoration: none;pointer-events: none;">
+                                            Ji Ma
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56; text-decoration: none;pointer-events: none;">
+                                            Xiaomin Zhao
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56; text-decoration: none;pointer-events: none;">
+                                            Ronghua Liang
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    Visual Informatics
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/wang2022afexplorer.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/wang2022afexplorer.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="list-item">
+                        <div class="paper-container">
+                            <div class="paper-picture">
+                                <a href="/publication/MapReconstruction/">
+                                    <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/paperimage/MapReconstruction.jpg">
+                                </a>
+                            </div>
+                            <div class="paper-content">
+                                <div class="paper-title">
+                                    <a href="/publication/MapReconstruction/" style="color: rgb(83,83,83);">
+                                        基于二阶优化的地图重构算法
+                                    </a>
+                                </div>
+                                <div class="paper-authors">
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/guodaosun">
+                                            孙国道
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/yunchaowang">
+                                            王云超
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56;" href="/members/cangli">
+                                            李藏
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56; text-decoration: none;pointer-events: none;">
+                                            蒋莉
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                    <div class="paper-author">
+                                        
+                                        
+                                        <a style="color: #4b4f56; text-decoration: none;pointer-events: none;">
+                                            梁荣华
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="paper-venue">
+                                    计算机辅助设计与图形学学报
+                                </div>
+                                <div class="paper-reference">
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/pdf/MapReconstruction.pdf">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/pdf.png"
+                                                 alt="pdf下载">
+                                        </a>
+                                    </div>
+                                    <div class="refer-pic">
+                                        <a href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/bib/MapReconstruction.bib">
+                                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/bibtex.jpg"
+                                                 alt="bib下载">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <h1 class="big-caption">学术任职</h1>
+            <div class="academic-div">
+                <ul>
+                    
+                    <li class="academic-content">ChinaVis 2022 会议审稿</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="down-div">
+            <h1 class="big-caption">联系方式</h1>
+            <div class="contact-div">
+                
+                <div class="contact-item">
+                    <img class="contact-pic"
+                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/contactimage/mail.svg" alt="联系方式图片">
+                    <div class="contact-content">wyctears [at] gmail.com</div>
+                </div>
+                
+                <div class="contact-item">
+                    <img class="contact-pic"
+                         src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/contactimage/location.svg" alt="联系方式图片">
+                    <div class="contact-content">浙江工业大学屏峰校区计算机大楼C518</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    
+</section>
+
+<style>
+    .paper-abstract{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .up-div {
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .big-caption {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 650px){
+        .intro-div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+        }
+        .left-div {
+            width: 100%;
+            margin-left: 5%;
+            text-align: -webkit-center;
+        }
+        .right-div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .paper-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .small-pic-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+        }
+    }
+    @media screen and (min-width: 650px){
+        .intro-div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 8%;
+            width: 100%;
+        }
+        .left-div {
+            width: 36%;
+            margin-left: 2%;
+            margin-right: 1%;
+        }
+        .right-div {
+            width: 60%;
+            margin-left: 1%;
+            display: flex;
+            flex-direction: column;
+        }
+        .paper-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 10px;
+        }
+        .small-pic-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .round-graph {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: inset 0rem 0rem 1em rgb(0 0 0 / 90%);
+    }
+    .url-link {
+        text-decoration: none;
+        margin-right: 2px;
+    }
+    .small-pic {
+        width: 48px;
+        height: 48px;
+        overflow: hidden;
+        transform: scale(1);
+        transition: transform 0.1s;
+    }
+    .intro-content {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .right-down-div {
+        display: flex;
+        flex-direction: row;
+    }
+    .interests {
+        width: 35%;
+    }
+    .education {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+    .int-tag {
+        display: flex;
+        flex-direction: column;
+    }
+    .interest-content {
+        width: max-content;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .edu-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-content {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .mid-div {
+        margin-bottom: 10%;
+    }
+    .paper-div {
+    }
+    .list-item {
+        list-style-type: none;
+    }
+    .paper-picture {
+        width: 400px;
+        margin-right: 15px;
+    }
+    .paper-content {
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+    }
+    .paper-title {
+        text-align: left;
+        font-size: 28px;
+        font-weight: 500;
+        color: rgb(83,83,83);
+    }
+    .paper-authors {
+        display: flex;
+        flex-direction: row;
+    }
+    .paper-venue{
+    }
+    .paper-reference {
+        display: flex;
+        flex-direction: row;
+    }
+    .paper-author {
+        color: #4b4f56;
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .down-div {
+        margin-bottom: 10%;
+    }
+    .contact-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+    .contact-pic {
+        width: 48px;
+        height: 48px;
+        margin-right: 10%;
+    }
+    .contact-content {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .academic-div{
+        width: 100%;
+        margin-left: 5%;
+    }
+    .academic-content{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+</style>
+
+
+    </div>
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:guodao@zjut.edu.cn">guodao [at] zjut.edu.cn</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="https://map.baidu.com/search/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E7%95%99%E5%92%8C%E8%B7%AF288%E5%8F%B7%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%B1%8F%E5%B3%B0%E6%A0%A1%E5%8C%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E6%A5%BCc516/" data-caption="浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516"
+                       data-type="iframe">浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            ZJUT VIS
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.js"></script>
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ZJUTVIS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="The website of ZJUTVIS, an academic group, research in VIS, college of computer science, zhejiang university of technology">
+  <meta name="keywords" content="">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="ZJUT VIS">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/element_ui/index.min.css" integrity="" media="screen">
+
+  
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/mailgo/mailgo.min.js" defer></script>
+
+  <script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/element-ui/index.js"></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/biglogo.svg" type="image/x-icon">
+
+
+</head>
+<body class="research">
+    <div class="wrapper"><style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> 首页
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/research">科研成果</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/publication">科研论文</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/members">成员</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">简介</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://www.zjutvis.org/"> 首页 </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/research">科研成果</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/publication">科研论文</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/members">成员</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">简介</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<section>
+    
+
+    
+
+    
+    
+    <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+        <h1 class="uk-text-center uk-heading-medium">时空数据可视分析</h1>
+        <p class="uk-text-center uk-text-lead paper-abstract" style="text-align-last: left;">在科技部中小企业中欧国际合作项目、浙江省杰青等项目的资助下，围绕城市时空定位数据中普遍存在的视觉混乱、认知负担及模式表达效率低下等关键科学问题，重点研究城市时空定位数据中的无遮挡呈现、轨迹数据挖掘以及时空数据实时交互、可视分析等方面的关键技术和方法。相关成果发表于IEEE TVCG、IEEE PVIS、JCST等，获2018年度浙江省科技进步奖一等奖、中国可视化与可视分析大会最佳综述论文等，代表性技术应用于行业龙头企业等。</p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <ul
+                class="js-filter uk-child-width-1-1 uk-child-width-1-2@m uk-text-center"
+                uk-grid
+                uk-height-match="target: > li > div > .fixy"
+        >
+            
+            
+            
+            <li data-tags="Analysis and exploration of spatio-temporal data such as traffic flow and vehicle trajectories have become important in urban planning and management. In this paper, we present a novel visualization technique called route-zooming that can embed spatio-temporal information into a map seamlessly for occlusion-free visualization of both spatial and temporal data. The proposed technique can broaden a selected route in a map by deforming the overall road network. We formulate the problem of route-zooming as a nonlinear least squares optimization problem by defining an energy function that ensures the route is broadened successfully on demand while the distortion caused to the road network is minimized. The spatio-temporal information can then be embedded into the route to reveal both spatial and temporal patterns without occluding the spatial context information. The route-zooming technique is applied in two instantiations including an interactive metro map for city tourism and illustrative maps to highlight information on the broadened roads to prove its applicability. We demonstrate the usability of our spatio-temporal visualization approach with case studies on real traffic flow data. We also study various design choices in our method, including the encoding of the time direction and choices of temporal display, and conduct a comprehensive user study to validate our embedded visualization design.32/papers/bib/sun2017embedding.bib322017-06-01 23:00:00 &#43;0000 UTC32路网拓宽可视分析32false3232True32/images/paperimage/sun2017embedding.jpg32False32false32IEEE Transactions on Visualization and Computer Graphics322017-06-01 23:00:00 &#43;0000 UTC3290032/papers/pdf/sun2017embedding.pdf322017-06-01 23:00:00 &#43;0000 UTC32Sun G, Liang R, Qu H, et al. Embedding Spatio-Temporal Information into Maps by Route-Zooming[J]. IEEE Transactions on Visualization and Computer Graphics, 2017, 23(5): 1506-1519.32Embedding Spatio-Temporal Information into Maps by Route-Zooming32publication32/publication/sun2017embedding/32/papers/video/sun2017embedding.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/sun2017embedding.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">路网拓宽可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2017embedding/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li data-tags="It is often necessary to analyze spatio-temporal data such as traffic flow, air pollution, and vehicle trajectories in a city. A map is often used to show the spatial context while various temporal displays like time series plots can be used to present the changes in the data over time. In this paper, we present a novel visualization that can seamlessly embed temporal displays into a map for occlusion-free visualization of both the spatial and temporal attributes of the data. We first extend the seam carving algorithm to broaden the roads of interest in a map with the least distortion to other areas, and then embed temporal displays into the roads to reveal temporal patterns without the occlusion of map information. We study various design choices in our method, including the encoding of the time direction and temporal display, and conduct two comprehensive user studies to validate our design decisions. We also demonstrate the usability of our approach with case studies on real traffic flow data in a major city.32/papers/bib/sun2014embedding.bib322014-05-01 23:00:00 &#43;0000 UTC32时空数据地图嵌入的无遮挡可视化32false3232True32/images/paperimage/sun2014embedding.jpeg32False32false32IEEE Pacific Visualization Symposium322014-05-01 23:00:00 &#43;0000 UTC3270032/papers/pdf/sun2014embedding.pdf322014-05-01 23:00:00 &#43;0000 UTC32Sun G, Liu Y, Wu W, et al. Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data[C]//2014 IEEE Pacific Visualization Symposium. IEEE, 2014: 185-192.32Embedding Temporal Display into Maps for Occlusion-Free Visualization of Spatio-Temporal Data32publication32/publication/sun2014embedding/32/papers/video/sun2014embedding.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/sun2014embedding.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">时空数据地图嵌入的无遮挡可视化</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2014embedding/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Geo-tagged microblog data covers billions of movement patterns on a global and local scale. Understanding these patterns could guide urban and traffic planning or help coping with disaster situations. We present a visual analytics system to investigate travel trajectories of people reconstructed from microblog messages. To analyze seasonal changes and events and to validate movement patterns against other data sources, we contribute highly interactive visual comparison methods that normalize and contrast trajectories as well as density maps within a single view. We also compute an adaptive hierarchical graph from the trajectories to abstract individual movements into higher-level structures. Specific challenges that we tackle are, among others, the spatio-temporal sparsity of the data, the volume of data varying by region, and a diverse mix of means of transportation. The applicability of our approach is presented in three case studies.32/papers/bib/TravelDiff.bib322016-03-10 23:00:00 &#43;0000 UTC32人群移动可视分析32false3232True32/images/paperimage/TravelDiff.jpg32False32false32IEEE Pacific Visualization Symposium322016-03-10 23:00:00 &#43;0000 UTC3270032/papers/pdf/TravelDiff.pdf322016-03-10 23:00:00 &#43;0000 UTC32Krueger R, Sun G, Beck F, et al. Traveldiff: Visual comparison analytics for massive movement patterns derived from twitter[C]//2016 IEEE Pacific Visualization Symposium (PacificVis). IEEE, 2016: 176-183.32TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter32publication32/publication/traveldiff/32/papers/video/TravelDiff.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/TravelDiff.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">人群移动可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/traveldiff/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Visual analytics employs interactive visualizations to integrate users’ knowledge and inference capability into numerical/algorithmic data analysis processes. It is an active research field that has applications in many sectors, such as security, finance, and business. The growing popularity of visual analytics in recent years creates the need for a broad survey that reviews and assesses the recent developments in the field. This report reviews and classifies recent work into a set of application categories including space and time, multivariate, text, graph and network, and other applications. More importantly, this report presents analytics space, inspired by design space, which relates each application category to the key steps in visual analytics, including visual mapping, model-based analysis, and user interactions. We explore and discuss the analytics space to add the current understanding and better understand research trends in the field.32/papers/bib/sun2013survey.bib322013-09-09 23:00:00 &#43;0000 UTC32可视分析技术和应用综述：前沿研究和未来挑战32false3232False32/images/paperimage/sun2013survey.jpg32False32false32Journal of Computer Science and Technology322013-09-09 23:00:00 &#43;0000 UTC3260032/papers/pdf/sun2013survey.pdf322013-09-09 23:00:00 &#43;0000 UTC32Sun G D, Wu Y C, Liang R H, et al. A survey of visual analytics techniques and applications: State-of-the-art research and future challenges[J]. Journal of Computer Science and Technology, 2013, 28(5): 852-867.32A Survey of Visual Analytics Techniques and Applications: State-of-the-Art Research and Future Challenges32publication32/publication/sun2013survey/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2013survey.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">可视分析技术和应用综述：前沿研究和未来挑战</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2013survey/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Real estate is an important industry in most countries. However, the analysis of the real estate market is very challenging as the data are high dimensional and have complex spatial and temporal patterns. In this paper, we present a novel Web-based visual analytics system, which integrates state-of-the-art interactive visualizations to enable end users to create their own visualizations and gain insight into the real estate market. The system is implemented using the new features in HTML5, which are natively supported in current browsers. We adopt a coordinated view design in our system consisting of four major components: a map view to show the geographical information of houses, a stacked graph view to show the evolution of house sales over time, a pixel-bar view to visualize multiple attributes of houses, and a treemap view to present the hierarchical structure of the data. Novel clutter reduction methods and rich user interactions are further proposed to enhance the flexibility and analytical ability of the whole system. We have applied our system to real property market data and obtained some interesting findings. Moreover, feedback from the end users of our system is very positive.32/papers/bib/sun2013web.bib322013-06-01 23:00:00 &#43;0000 UTC32时空可视化研究显着性模型32false3232True32/images/paperimage/sun2013web.jpeg32False32false32SCIENCE CHINA Information Sciences322013-06-01 23:00:00 &#43;0000 UTC3258032/papers/pdf/sun2013web.pdf322013-06-01 23:00:00 &#43;0000 UTC32Sun G D, Liang R H, Wu F L, et al. A Web-based visual analytics system for real estate data[J]. Science China Information Sciences, 2013, 56(5): 1-13.32A Web-based visual analytics system for real estate data32publication32/publication/sun2013web/32/papers/video/sun2013web.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/sun2013web.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">时空可视化研究显着性模型</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2013web/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li data-tags="Traffic zone is a geographical unit which is proposed to reduce the complexity of traffic control and management systems in modern urban road networks. Traffic zone could be generated by different division approaches (e.g., rule-based approaches, data-driven approaches), which may lead to different diverse division results and characteristics. The traditional division approaches usually rely on human experience or static constraints (e.g., political boundaries or natural environment) while neglecting the traveling pattern among different regions. Data-driven approaches are also utilized in recent years; however, domain knowledge and rules are not well integrated and represented in such systems. This paper proposes a new approach that both combines patterns that is hidden in the data and user-defined rules. It not only fully employs the traffic hot spots and traveling patterns among different regions, but also considers the realistic constraints such as road network. We also design TZVis, a visual analysis system that fully integrates with the division approach. The system allows users to generate multiple traffic zone division schemes under different requirements, analyze the schemes in multiple views and select an optimal traffic zone scheme. It provides a map overview to show the traffic zone division result, a matrix view to show the traffic relationship of zones, a parallel coordinates plot for displaying the specific traffic records, a LineUp view to display all the division results and a radar chart to show the features of each zones. We further test our division approach and demonstrate the usefulness of our system based on the shared bicycle dataset.32/papers/bib/sun20tzvis19atomixer.bib322019-12-19 23:00:00 &#43;0000 UTC32基于共享单车数据的交通小区规划32false3232True32/images/paperimage/tzvis.png32False32false32Journal of Visualization322019-12-19 23:00:00 &#43;0000 UTC3230032/papers/pdf/TZVis.pdf322019-12-19 23:00:00 &#43;0000 UTC32Sun G, Chang B, Zhu L, et al. TZVis: visual analysis of bicycle data for traffic zone division[J]. Journal of Visualization, 2019, 22(6): 1193-1208.32TZVis: Visual Analysis of Bicycle Data for Traffic Zone Division32publication32/publication/tzvis/32/papers/video/tzvis.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/tzvis.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于共享单车数据的交通小区规划</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/tzvis/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Volume rendering techniques have been developed for decades and have been widely applied in many research fields, such as medical image visualization, geological exploration, scientific computing. etc. With the maturity of volume visualization techniques, one may have many choices to analyze volume data. However, facing different application requirements in specific cases, one may need pertinent methods to visualize volume data and highlight specific volume features. In this paper, we review and classify the existing literature on feature enhancement volume rendering. The classification is conducted based on the enhancement of four types of features (the external feature, the internal feature, the structure feature, and the ideographic feature) in volume data. Finally, we conclude this survey with future challenges in feature enhancement volume visualization.32/papers/bib/xu2021survey.bib322021-09-23 23:00:00 &#43;0000 UTC32用于特征增强的体可视化技术综述32false3232False32/images/paperimage/xu2021survey.jpg32False32false32Visual Informatics322021-09-23 23:00:00 &#43;0000 UTC3220032/papers/pdf/xu2021survey.pdf322021-09-23 23:00:00 &#43;0000 UTC32Xu C, Sun G, Liang R. A survey of volume visualization techniques for feature enhancement[J]. Visual Informatics, 2021, 5(3): 70-81.32A Survey of Volume Visualization Techniques for Feature Enhancement32publication32/publication/xu2021survey/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/xu2021survey.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">用于特征增强的体可视化技术综述</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/xu2021survey/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li data-tags="流行病数据的多层面可视分析，可以加快流行病数据分析任务的交互式探索效率和加深对潜在模式的深刻理解。本文对流行病数据可视分析的相关工作展开综述，并主要通过四个方面进行总结和归纳:(1)流行病数据的时空可视分析，帮助用户发现和理解流行病数据在时间、空间以及时空维度中潜在的流行病特征和传播规律等;(2)流行病数据中涉及非结构化/半结构化文本的语义可视分析，辅助用户快速了解长、短文本内容中的流行病内容态势、情感走向等;(3)流行病传播模型的可视分析，增强用户对流行病传播过程中的预测、仿真、监测等任务的交互式理解;(4)流行病数据的静态信息图，直观反映流行病信息的上下文内容和提高公众的理解效率。在上述基础上，本文阐述了流行病数据可视分析在数据存储和获取，地图可视化形式多元扩展，流行病模拟传播分析和多学科交融的综合可视分析存在的问题和挑战.32/papers/bib/sun2022epidemic.bib322022-04-14 23:00:00 &#43;0000 UTC32流行病数据可视分析综述32false3232False32/images/paperimage/sun2022epidemic.jpg32True32false32计 算 机 学 报322022-04-14 23:00:00 &#43;0000 UTC3215032/papers/pdf/sun2022epidemic.pdf322022-04-14 23:00:00 &#43;0000 UTC32孙国道,杨雨璠,潘翔,梁荣华.流行病数据可视分析综述[J].计算机学报,2022,45(03):601-623.32流行病数据可视分析综述32publication32/publication/sun2022epidemic/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2022epidemic.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">流行病数据可视分析综述</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2022epidemic/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Massive traffic surveillance data extracted from vehicle detectors such as cameras provide essential information for revealing urban traffic pattern. However, most existing tools only allow users to analyze the data in specific time periods and regions with particular requirements. In this paper, we work closely with traffic domain experts and investigate a novel way of reframing visual traffic analysis tasks into the combinations of various atom categorical/numerical features and visual presentation. The categorical features contain primitive attributes such as vehicle type, O/D status and driving direction, and the numerical features contains information such as vehicle frequency and speed. The combination of above features includes four basic operations, namely and, or, xor and not to support diversified user requirements. Basic and advanced visualization methods such as trajectory view and flow distribution view are provided to demonstrate the combination results. Through interactive assembling of various atom operations, analysts could derive different query conditions to meet existed and potential upcoming analysis requirements such as locating suspicious vehicles (e.g., fake plate vehicles). Furthermore, AtoMixer, a visual analytic system is developed to support spatio-temporal investigative tasks for traffic surveillance data. We evaluate the effectiveness and scalability of our approach with real world traffic surveillance data.32/papers/bib/sun2019atomixer.bib322019-03-19 23:00:00 &#43;0000 UTC32基于原子交互的交通数据可视分析32false3232True32/images/paperimage/sun2019atomixer.jpg32False32false32Journal of Computer Languages322019-03-19 23:00:00 &#43;0000 UTC3210032/papers/pdf/sun2019atomixer.pdf322019-03-19 23:00:00 &#43;0000 UTC32Sun G, Zhao Y, Cao D, et al. AtoMixer: Atom-based interactive visual exploration of traffic surveillance data[J]. Journal of Computer Languages, 2019, 53: 53-62.32AtoMixer: Atom-based interactive visual exploration of traffic surveillance data32publication32/publication/sun2019atomixer/32/papers/video/sun2019atomixer.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/sun2019atomixer.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于原子交互的交通数据可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2019atomixer/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Spatial visualization has always been a primary part of information visualization and analysis, especially in the era of big data. The map, the most fundamental components of spatial visualization, is a kind of simple, intuitive and popular way to show the visualization of geographic information. The traditional map is not convenient to overlay complex elements due to its own complex filled color and the actual geographical boundaries. We aim to cut off dusty foliage of the maps, and deliver the main structure of the map visualization result. We proposes RectMap, a boundary-reserved map deformation approach for visualizing geographical map, which can maintain the mind map of original map. The proposed approach integrate traditional Douglas-Peucker algorithm and our Gridding algorithm. The Douglas-Peucker algorithm generates a simplified map, and the Gridding algorithm optimizes the initial simplified map. Case study and user study are further conducted to demonstrate the effectiveness and usefulness of the new-style map.32/papers/bib/sun2018rectmap.bib322018-06-10 23:00:00 &#43;0000 UTC32基于边界保留的地图形变方法32false3232False32/images/paperimage/sun2018rectmap.jpg32False32false32Chinese Journal of Electronics322018-06-10 23:00:00 &#43;0000 UTC328032/papers/pdf/sun2018rectmap.pdf322018-06-10 23:00:00 &#43;0000 UTC32Sun G, Zhai S, Li S, et al. RectMap: A Boundary‐Reserved Map Deformation Approach for Visualizing Geographical Map[J]. Chinese Journal of Electronics, 2018, 27(5): 927-933.32RectMap: A Boundary-Reserved Map Deformation Approach for Visualizing Geographical Map32publication32/publication/sun2018rectmap/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/sun2018rectmap.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于边界保留的地图形变方法</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/sun2018rectmap/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="Traffic jam has become a severe urban problem to most metropolises in the world. How to understand and resolve these traffic problems has become a global issue. In the new era of big data, visualization and analysis with traffic-related data are increasingly appreciated. This paper presents DiffusionInsighter, a web-based visual traffic analysis system, that allows users to explore the traffic flow and diffusion patterns with different spatial and temporal granularity. The DiffusionInsighter first applies a visual data cleaning and filtering component to remove dirty data and remain available ones for further analysis. A set of carefully designed interaction and visualization tools including geographical view, pixel map view, chord diagram and network diffusion view is proposed in the DiffusionInsighter to support level-of-detail exploration of diffusion patterns of the traffic flow. Different views are collaborated together and are integrated into geographic map. A series of real-life case studies are conducted using a large GPS trajectory dataset of taxis in Hangzhou.32/papers/bib/liu2018diffusioninsighter.bib322018-05-19 23:00:00 &#43;0000 UTC32交通扩散流模式的可视分析32false3232False32/images/paperimage/liu2018diffusioninsighter.jpg32False32false32Chinese Journal of Electronics322018-05-19 23:00:00 &#43;0000 UTC328032/papers/pdf/liu2018diffusioninsighter.pdf322018-05-19 23:00:00 &#43;0000 UTC32Liu C, Sun G, Li S, et al. DiffusionInsighter: visual analysis of traffic diffusion flow patterns[J]. Chinese Journal of Electronics, 2018, 27(5): 942-950.32DiffusionInsighter: Visual Analysis of Traffic Diffusion Flow Patterns32publication32/publication/liu2018diffusioninsighter/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/liu2018diffusioninsighter.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">交通扩散流模式的可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/liu2018diffusioninsighter/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li data-tags="空间数据可视化是信息可视化的重要组成部分，而地图则是空间数据可视化最常用的载体。生成与传统地图相似的简化地图能够提高研究人员与普通民众对空间数据分析和可视查看的效率和准确率。然而传统通过人工绘制得到重构地图的过程十分烦琐，现有算法生成的重构地图大都由矩形形式组成，导致地图结构化信息缺失。这些因素都会影响重构地图的可视化效果。通过数据简化以缩减边界数据量、直角化与去噪声以规范图形边界和消除边界毛刺、二阶优化求解以得到最优布局效果这3个步骤，实现地图重构及可视化的完整流程。文中选择我国部分省份以及美国除夏威夷和阿拉斯加外的地区作为测试样本。对比现有的空间有序正方化布局算法，该算法能更好地维持重构地图与实际地图在区域形状和邻域关系的相似度。32/papers/bib/MapReconstruction.bib322020-06-09 00:00:00 &#43;0800 CST32基于二阶优化的地图重构算法32false3232False32images/paperimage/MapReconstruction.jpg32True32false32计算机辅助设计与图形学学报322020-06-09 00:00:00 &#43;0800 CST325032/papers/pdf/MapReconstruction.pdf322020-06-09 00:00:00 &#43;0800 CST32孙国道, 王云超, 李藏, 蒋莉, 等. 基于二阶优化的地图重构算法[J]. 计算机辅助设计与图形学学报, 2020, 32(9):1367–1376.32基于二阶优化的地图重构算法32publication32/publication/MapReconstruction/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/paperimage/MapReconstruction.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于二阶优化的地图重构算法</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/MapReconstruction/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="人类活动会持续产生大量时空轨迹数据，探索和理解数据中的隐藏模式可帮助理解人类生产生活的规律、提高管理效率。前人工作大多关注于轨迹数据的宏观可视分析，缺乏对高密度小区域内的个体行为展开深入分析。针对高密度群体轨迹数据，提出多视图结合的可视分析方法以探索和分析其微观演化情况。该方法主要包括4个部分：基于small-multiples的特征统计视图, 展示轨迹数据在时间和空间维度上的特征分布；采用多分辨率河流视图支持从多层次聚合角度展示轨迹数据的变化；采用轨迹投影视图揭示高密度群体轨迹间的相关性；采用多层次空间地图以展示轨迹数据的具体分布情况。上述方法形成的可视分析系统已用于2个高密度群体轨迹数据集的分析中，为后续高密度群体轨迹数据的可视分析提供一种解决思路。32/papers/bib/highdensity.bib322020-09-18 00:00:00 &#43;0800 CST32高密度群体轨迹数据的微观可视分析32false3232True32/images/paperimage/highdensity.jpg32True32false32计算机辅助设计与图形学学报322020-09-18 00:00:00 &#43;0800 CST325032/papers/pdf/highdensity.pdf322020-09-18 00:00:00 &#43;0800 CST32朱素佳, 孙国道, 江棨, 等. 高密度群体轨迹数据的微观可视分析[J]. 计算机辅助设计与图形学学报, 2020, 32(12):1871–1880.32高密度群体轨迹数据的微观可视分析32publication32/publication/highdensity/32/papers/video/highdensity.mp4">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <video src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//papers/video/highdensity.mp4"
+                                   controls="" playsinline="" autoplay=false style="width: 100%"></video>
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">高密度群体轨迹数据的微观可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/highdensity/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="空气污染正迅速成为一个重要的社会问题，并越来越受到公众和科学界的关注和重视。不同城市间的空气质量如何相互影响？不同城市的空气质量属性间有哪些相似性和差异性，以及哪些因素会影响空气质量的相互作用？为了回答这些复杂的问题，提出一个全面的基于城市群分布的可视分析系统以探索城市群的动态演变过程。该方法包括Voronoi图以展示城市群在空间上的分布以及在空间上的演变过程，嵌入式线条堆栈图以展示城市群在时间上的演变过程，平行坐标视图以展示城市群的污染情况。文中方法已用于城市空气质量的真实数据分析中，该系统可以用来探索城市群的演变，并为城市群的联合污染防治提供必要的基础。32/papers/bib/citygroup.bib322017-01-15 00:00:00 &#43;0800 CST32基于城市群的空气质量数据的可视分析方法研究32false3232False32/images/paperimage/citygroup.jpg32True32false32计算机辅助设计与图形学学报322017-01-15 00:00:00 &#43;0800 CST325032/papers/pdf/citygroup.pdf322017-01-15 00:00:00 &#43;0800 CST32孙国道, 胡亚娟, 蒋莉, 等. 基于城市群的空气质量数据的可视分析方法研究[J]. 计算机辅助设计与图形学报, 2017, 29(1):17–26.32基于城市群的空气质量数据的可视分析方法研究32publication32/publication/citygroup/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/citygroup.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于城市群的空气质量数据的可视分析方法研究</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/citygroup/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="针对出租车GPS数据因其数据量庞大和时空信息特征复杂而带来的分析难题提出一种基于出租车GPS大数据的道路行车可视分析方法。该方法用OpenStreetMap得到开阔道路的地图，采用离散和连续型2种编码方式对道路上的车流量、行车方向和速度等情况进行分析；离散编码采用箭头图表示，并用速度区间聚类算法优化颜色布局；连续编码采用栈图表示，并用特征点提取算法加速图表绘制。最后以杭州市出租车GPS数据为例将数据分布式存储在云计算平台上，采用MapReduce加快数据查询和处理，应用文中的2种可视编码方式进行可视分析，结果表明，该方法能准确地反映杭州市道路交通状况。32/papers/bib/TaxiGPS.bib322014-12-15 00:00:00 &#43;0800 CST32出租车GPS大数据的道路行车可视分析32false3232False32/images/paperimage/TaxiGPS.jpg32True32false32计算机辅助设计与图形学学报322014-12-15 00:00:00 &#43;0800 CST325032/papers/pdf/TaxiGPS.pdf322014-12-15 00:00:00 &#43;0800 CST32何贤国, 孙国道, 高家全, 等. 出租车GPS大数据的道路行车可视分析[J]. 计算机辅助设计与图形学学报, 2014, 26(12):2163–2172.32出租车GPS大数据的道路行车可视分析32publication32/publication/TaxiGPS/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/TaxiGPS.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">出租车GPS大数据的道路行车可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/TaxiGPS/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li data-tags="随着城市发展和城市人口密集化趋势的愈加明显，大量人群移动造成的交通拥堵、空气污染等城市问题日益突出；为了直观、有效地分析人群移动现象和理解背后的语义信息，提出了一可视分析方法，通过整合道路卡口数据和城市POI数据，采用改进后的DBSCAN算法将区域进行功能相似性划分以增强移动模式背后的意图，从而挖掘人群移动在数值和语义上的模式。进一步，基于BubbleSet可视化展示不同功能区域的分布和差异性，并连接不同的功能区块以展示区域之间的人群移动。最后通过案例分析，结合真实数据和区域功能特征，分析和探索人群移动意图，得到人群移动模式和功能区域之间的联系。32/papers/bib/HumanMovement.bib322018-06-15 00:00:00 &#43;0800 CST32基于空间区域功能划分的人群移动模式可视分析32false3232False32/images/paperimage/HumanMovement.jpg32True32false32计算机辅助设计与图形学学报322018-06-15 00:00:00 &#43;0800 CST325032/papers/pdf/HumanMovement.pdf322018-06-15 00:00:00 &#43;0800 CST32孙国道, 柳芬, 蒋莉, 等. 基于空间区域功能划分的人群移动模式可视分析[J]. 计算机辅助设计与图形学学报, 2018, 30(6):1073–1081.32基于空间区域功能划分的人群移动模式可视分析32publication32/publication/HumanMovement/32">
+                <div class="uk-card uk-card-default" style="position: relative;">
+                    <div class="fixy">
+                        <div class="uk-card-media-top">
+                            
+                            <img src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/paperimage/HumanMovement.jpg">
+                            
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">基于空间区域功能划分的人群移动模式可视分析</h3>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-footer">
+                        <a href="/publication/HumanMovement/" class="uk-button uk-button-text"
+                        >Read more</a
+                        >
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+
+        <h2>Reference</h2>
+        <div class="uk-text-center">
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[1]Sun G, Liang R, Qu H, et al. Embedding Spatio-Temporal Information into Maps by Route-Zooming[J]. IEEE Transactions on Visualization and Computer Graphics, 2017, 23(5): 1506-1519.</p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[2]Sun G, Liu Y, Wu W, et al. Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data[C]//2014 IEEE Pacific Visualization Symposium. IEEE, 2014: 185-192.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[3]Krueger R, Sun G, Beck F, et al. Traveldiff: Visual comparison analytics for massive movement patterns derived from twitter[C]//2016 IEEE Pacific Visualization Symposium (PacificVis). IEEE, 2016: 176-183.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[4]Sun G D, Wu Y C, Liang R H, et al. A survey of visual analytics techniques and applications: State-of-the-art research and future challenges[J]. Journal of Computer Science and Technology, 2013, 28(5): 852-867.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[5]Sun G D, Liang R H, Wu F L, et al. A Web-based visual analytics system for real estate data[J]. Science China Information Sciences, 2013, 56(5): 1-13.</p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[6]Sun G, Chang B, Zhu L, et al. TZVis: visual analysis of bicycle data for traffic zone division[J]. Journal of Visualization, 2019, 22(6): 1193-1208.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[7]Xu C, Sun G, Liang R. A survey of volume visualization techniques for feature enhancement[J]. Visual Informatics, 2021, 5(3): 70-81.</p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[8]孙国道,杨雨璠,潘翔,梁荣华.流行病数据可视分析综述[J].计算机学报,2022,45(03):601-623.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[9]Sun G, Zhao Y, Cao D, et al. AtoMixer: Atom-based interactive visual exploration of traffic surveillance data[J]. Journal of Computer Languages, 2019, 53: 53-62.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[10]Sun G, Zhai S, Li S, et al. RectMap: A Boundary‐Reserved Map Deformation Approach for Visualizing Geographical Map[J]. Chinese Journal of Electronics, 2018, 27(5): 927-933.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[11]Liu C, Sun G, Li S, et al. DiffusionInsighter: visual analysis of traffic diffusion flow patterns[J]. Chinese Journal of Electronics, 2018, 27(5): 942-950.</p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[12]孙国道, 王云超, 李藏, 蒋莉, 等. 基于二阶优化的地图重构算法[J]. 计算机辅助设计与图形学学报, 2020, 32(9):1367–1376.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[13]朱素佳, 孙国道, 江棨, 等. 高密度群体轨迹数据的微观可视分析[J]. 计算机辅助设计与图形学学报, 2020, 32(12):1871–1880.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[14]孙国道, 胡亚娟, 蒋莉, 等. 基于城市群的空气质量数据的可视分析方法研究[J]. 计算机辅助设计与图形学报, 2017, 29(1):17–26.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[15]何贤国, 孙国道, 高家全, 等. 出租车GPS大数据的道路行车可视分析[J]. 计算机辅助设计与图形学学报, 2014, 26(12):2163–2172.</p>
+            
+            
+            
+            
+            
+            
+            <p style="text-align: -webkit-auto;">[16]孙国道, 柳芬, 蒋莉, 等. 基于空间区域功能划分的人群移动模式可视分析[J]. 计算机辅助设计与图形学学报, 2018, 30(6):1073–1081.</p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    
+</section>
+
+<style>
+    .paper-abstract{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .up-div {
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .big-caption {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 650px){
+        .intro-div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+        }
+        .left-div {
+            width: 100%;
+            margin-left: 5%;
+            text-align: -webkit-center;
+        }
+        .right-div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .paper-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 1%;
+            width: 100%;
+        }
+        .small-pic-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+        }
+    }
+    @media screen and (min-width: 650px){
+        .intro-div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 8%;
+            width: 100%;
+        }
+        .left-div {
+            width: 36%;
+            margin-left: 2%;
+            margin-right: 1%;
+        }
+        .right-div {
+            width: 60%;
+            margin-left: 1%;
+            display: flex;
+            flex-direction: column;
+        }
+        .paper-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4%;
+            box-shadow: 0 0 20px rgb(0 0 128 / 30%);
+            padding-bottom: 10px;
+        }
+        .small-pic-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .round-graph {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: inset 0rem 0rem 1em rgb(0 0 0 / 90%);
+    }
+    .url-link {
+        text-decoration: none;
+        margin-right: 2px;
+    }
+    .small-pic {
+        width: 48px;
+        height: 48px;
+        overflow: hidden;
+        transform: scale(1);
+        transition: transform 0.1s;
+    }
+    .intro-content {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .right-down-div {
+        display: flex;
+        flex-direction: row;
+    }
+    .interests {
+        width: 35%;
+    }
+    .education {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+    .int-tag {
+        display: flex;
+        flex-direction: column;
+    }
+    .interest-content {
+        width: max-content;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .edu-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-content {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .mid-div {
+        margin-bottom: 10%;
+    }
+    .paper-div {
+    }
+    .list-item {
+        list-style-type: none;
+    }
+    .paper-picture {
+        width: 400px;
+        margin-right: 15px;
+    }
+    .paper-content {
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+    }
+    .paper-title {
+        text-align: left;
+        font-size: 28px;
+        font-weight: 500;
+        color: rgb(83,83,83);
+    }
+    .paper-authors {
+        display: flex;
+        flex-direction: row;
+    }
+    .paper-venue{
+    }
+    .paper-reference {
+        display: flex;
+        flex-direction: row;
+    }
+    .paper-author {
+        color: #4b4f56;
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .refer-pic {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .down-div {
+        margin-bottom: 10%;
+    }
+    .contact-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+    .contact-pic {
+        width: 48px;
+        height: 48px;
+        margin-right: 10%;
+    }
+    .contact-content {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .academic-div{
+        width: 100%;
+        margin-left: 5%;
+    }
+    .academic-content{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+</style>
+
+
+    </div>
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:guodao@zjut.edu.cn">guodao [at] zjut.edu.cn</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="https://map.baidu.com/search/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E7%95%99%E5%92%8C%E8%B7%AF288%E5%8F%B7%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%B1%8F%E5%B3%B0%E6%A0%A1%E5%8C%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E6%A5%BCc516/" data-caption="浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516"
+                       data-type="iframe">浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            ZJUT VIS
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.js"></script>
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+</body>
+</html>

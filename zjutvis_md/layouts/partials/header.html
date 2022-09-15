@@ -1,0 +1,132 @@
+<style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            //font-size: 28px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            //font-size: 28px;
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+<!--        <div class="title-div"></div>-->
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href={{.Site.BaseURL}}>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href={{.Site.BaseURL}}>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                {{if .IsHome}}
+                <li class="uk-active "><a style="font-size: 18px; text-transform: none"
+                        href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
+                {{else}}
+                <li><a style="font-size: 18px; text-transform: none" href="/">{{ with .Site.Params.Home }} {{ . }}
+                        {{ end }}</a></li>
+
+                {{end}}
+                {{ range .Site.Menus.main }}
+                {{$aURL := .URL | relLangURL}}
+                {{$page := $.Page.Permalink | relLangURL}}
+                {{$aURL2 := split $aURL "/"}}
+                {{$page2 := split $page "/"}}
+                {{$aURL3 := index $aURL2 1}}
+                {{$page3 := index $page2 1}}
+                {{if eq $aURL3 $page3}}
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="{{ .URL | relURL }}">{{.Name}}</a></li>
+                {{else}}
+                <li><a style="font-size: 18px; text-transform: none" href="{{ .URL | relURL }}">{{.Name}}</a></li>
+                {{end}}
+                {{end}}
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            {{if .IsHome}}
+            <li class="uk-active"><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            </li>
+            {{else}}
+            <li><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
+
+            {{end}}
+            {{ range .Site.Menus.main }}
+            {{$aURL := .URL | relLangURL}}
+            {{$page := $.Page.Permalink | relLangURL}}
+            {{$aURL2 := split $aURL "/"}}
+            {{$page2 := split $page "/"}}
+            {{$aURL3 := index $aURL2 1}}
+            {{$page3 := index $page2 1}}
+            {{if eq $aURL3 $page3}}
+            <li class="uk-active"><a style="font-size: 18px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
+            {{else}}
+            <li><a style="font-size: 18px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
+            {{end}}
+            {{end}}
+        </ul>
+
+    </div>
+</div>
+{{ template "_internal/google_analytics.html" . }}

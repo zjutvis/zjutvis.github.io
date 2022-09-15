@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text-data on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/categories/text-data/</link>
+    <description>Recent content in text-data on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 01 Sep 2022 22:00:00 +0000</lastBuildDate><atom:link href="http://www.zjutvis.org/categories/text-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文本数据可视分析</title>
+      <link>http://www.zjutvis.org/research/text-data/</link>
+      <pubDate>Thu, 01 Sep 2022 22:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/text-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>司法判决文书数据中演化模式的挖掘和可视分析</title>
+      <link>http://www.zjutvis.org/publication/EvolutionaryPatterns/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/EvolutionaryPatterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DT2VIS: A Focus&#43;Context Answer Generation System to Facilitate Visual Exploration of Tabular Data</title>
+      <link>http://www.zjutvis.org/publication/jiang2021dt2vis/</link>
+      <pubDate>Fri, 21 May 2021 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/jiang2021dt2vis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Survey on Automatic Infographics and Visualization Recommendations</title>
+      <link>http://www.zjutvis.org/publication/zhu2020survey/</link>
+      <pubDate>Wed, 19 Aug 2020 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/zhu2020survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SocialWave: Visual Analysis of Spatio-temporal Diffusion of Information on Social Media</title>
+      <link>http://www.zjutvis.org/publication/socialwave/</link>
+      <pubDate>Sun, 10 Sep 2017 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/socialwave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StreamExplorer: A Multi-Stage System for Visually Exploring Events in Social Streams</title>
+      <link>http://www.zjutvis.org/publication/streamexplorer/</link>
+      <pubDate>Sat, 09 Sep 2017 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/streamexplorer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EvoRiver: Visual Analysis of Topic Coopetition on Social Media</title>
+      <link>http://www.zjutvis.org/publication/sun2014evoriver/</link>
+      <pubDate>Wed, 05 Nov 2014 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/publication/sun2014evoriver/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

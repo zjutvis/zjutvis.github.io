@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科研成果 on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/research/</link>
+    <description>Recent content in 科研成果 on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="http://www.zjutvis.org/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>时空数据可视分析</title>
+      <link>http://www.zjutvis.org/research/spatio-temporal/</link>
+      <pubDate>Thu, 01 Sep 2022 23:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/spatio-temporal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文本数据可视分析</title>
+      <link>http://www.zjutvis.org/research/text-data/</link>
+      <pubDate>Thu, 01 Sep 2022 22:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/text-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视频数据可视分析</title>
+      <link>http://www.zjutvis.org/research/video-data/</link>
+      <pubDate>Thu, 01 Sep 2022 21:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/research/video-data/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
