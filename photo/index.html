@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ZJUTVIS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="This is meta description.">
+  <meta name="keywords" content="">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="ZJUT VIS">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/element_ui/index.min.css" integrity="" media="screen">
+
+  <link rel="alternate" type="application/rss+xml" href="http://www.zjutvis.org/photo/index.xml" title="ZJUTVIS" />
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/mailgo/mailgo.min.js" defer></script>
+
+  <script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/element-ui/index.js"></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/images/biglogo.svg" type="image/x-icon">
+
+
+</head>
+<body class="photo">
+    <div class="wrapper"><style>
+    @media screen and (max-width: 400px){
+        .title-div{
+            width: 30%;
+            float: left;
+            height: auto;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 0.5rem;
+            width: 25%;
+            align-self: center;
+            color: #474646;
+        }
+    }
+    @media screen and (min-width: 400px){
+        .title-div{
+            width: auto;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin-left: 1%;
+        }
+        .big-title {
+            
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: rgba(25,30,41,0.9);
+            text-shadow: 3px 3px 2px #aab5e6;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .small-title{
+            position: relative;
+            padding-left: 1rem;
+            width: auto;
+            align-self: center;
+            color: #474646;
+        }
+    }
+</style>
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="title-div">
+            <h1 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    ZJUT VIS
+                </a>
+            </h1>
+            <h2 class="big-title">
+                <a style="text-decoration:none; color:rgba(25,30,41,0.9)" href=http://www.zjutvis.org/>
+                    浙工大可视化小组
+                </a>
+            </h2>
+        </div>
+        <div class="small-title">
+            <div>网站建设中</div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> 首页
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/research">科研成果</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/publication">科研论文</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/members">成员</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/photo">相册</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">简介</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://www.zjutvis.org/"> 首页 </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/research">科研成果</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/publication">科研论文</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/members">成员</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/photo">相册</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">简介</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+
+<section class="uk-margin-large-bottom">
+        <h1 class="uk-heading-medium uk-text-center">相册</h1>
+</section>
+
+
+
+<section>
+    <div class="uk-container">
+        <form class="uk-form-horizontal uk-margin-large" action="" method="post">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            <h4>ChinaVis 2022</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202204.jpg" title="/images/photos/chinavis2022/cv202204.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202204.jpg"
+                         height="200" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202204.jpg')"></span>
+                    </span>
+                    <div class="name">王云超作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202203.jpg" title="/images/photos/chinavis2022/cv202203.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202203.jpg"
+                         height="500" width="350"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202203.jpg')"></span>
+                    </span>
+                    <div class="name">张歌斐作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202218.jpg" title="/images/photos/chinavis2022/cv202218.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202218.jpg"
+                         height="400" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202218.jpg')"></span>
+                    </span>
+                    <div class="name">彩虹土族园</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202207.jpg" title="/images/photos/chinavis2022/cv202207.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202207.jpg"
+                         height="500" width="350"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202207.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202217.jpg" title="/images/photos/chinavis2022/cv202217.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202217.jpg"
+                         height="200" width="100"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202217.jpg')"></span>
+                    </span>
+                    <div class="name">彩虹土族园</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202208.jpg" title="/images/photos/chinavis2022/cv202208.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202208.jpg"
+                         height="800" width="533"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202208.jpg')"></span>
+                    </span>
+                    <div class="name">孙国道老师作专题报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202216.jpg" title="/images/photos/chinavis2022/cv202216.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202216.jpg"
+                         height="500" width="350"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202216.jpg')"></span>
+                    </span>
+                    <div class="name">志愿者</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202219.jpg" title="/images/photos/chinavis2022/cv202219.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202219.jpg"
+                         height="500" width="350"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202219.jpg')"></span>
+                    </span>
+                    <div class="name">师生合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202215.jpg" title="/images/photos/chinavis2022/cv202215.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202215.jpg"
+                         height="200" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202215.jpg')"></span>
+                    </span>
+                    <div class="name">张扬在挑战赛FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202206.jpg" title="/images/photos/chinavis2022/cv202206.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202206.jpg"
+                         height="400" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202206.jpg')"></span>
+                    </span>
+                    <div class="name">张歌斐获得最佳综述奖</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202213.jpg" title="/images/photos/chinavis2022/cv202213.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202213.jpg"
+                         height="400" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202213.jpg')"></span>
+                    </span>
+                    <div class="name">挑战赛颁奖</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202202.jpg" title="/images/photos/chinavis2022/cv202202.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202202.jpg"
+                         height="350" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202202.jpg')"></span>
+                    </span>
+                    <div class="name">朱子昊作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202210.jpg" title="/images/photos/chinavis2022/cv202210.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202210.jpg"
+                         height="533" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202210.jpg')"></span>
+                    </span>
+                    <div class="name">参会</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202209.jpg" title="/images/photos/chinavis2022/cv202209.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202209.jpg"
+                         height="600" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202209.jpg')"></span>
+                    </span>
+                    <div class="name">常宝峰在海报FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202221.jpg" title="/images/photos/chinavis2022/cv202221.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202221.jpg"
+                         height="400" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202221.jpg')"></span>
+                    </span>
+                    <div class="name">青海湖</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202220.jpg" title="/images/photos/chinavis2022/cv202220.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202220.jpg"
+                         height="500" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202220.jpg')"></span>
+                    </span>
+                    <div class="name">师生合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202214.jpg" title="/images/photos/chinavis2022/cv202214.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202214.jpg"
+                         height="800" width="450"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202214.jpg')"></span>
+                    </span>
+                    <div class="name">蒋楠在挑战赛FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202211.jpg" title="/images/photos/chinavis2022/cv202211.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202211.jpg"
+                         height="800" width="450"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202211.jpg')"></span>
+                    </span>
+                    <div class="name">参会</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202201.jpg" title="/images/photos/chinavis2022/cv202201.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202201.jpg"
+                         height="800" width="450"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202201.jpg')"></span>
+                    </span>
+                    <div class="name">孙国道老师作专题报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202212.jpg" title="/images/photos/chinavis2022/cv202212.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202212.jpg"
+                         height="500" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202212.jpg')"></span>
+                    </span>
+                    <div class="name">志愿者</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2022/cv202205.jpg" title="/images/photos/chinavis2022/cv202205.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202205.jpg"
+                         height="450" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2022/cv202205.jpg')"></span>
+                    </span>
+                    <div class="name">孙国道老师受邀参与圆桌论坛</div>
+                </li>
+                
+            </ul>
+            
+            <h4>2021届博士毕业</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/phd21/phd202101.jpeg" title="/images/photos/phd21/phd202101.jpeg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/phd21/phd202101.jpeg"
+                         height="500" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/phd21/phd202101.jpeg')"></span>
+                    </span>
+                    <div class="name">徐超清博士毕业</div>
+                </li>
+                
+            </ul>
+            
+            <h4>ChinaVis 2021</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202104.jpg" title="/images/photos/chinavis2021/cv202104.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202104.jpg"
+                         height="400" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202104.jpg')"></span>
+                    </span>
+                    <div class="name">朱子昊在海报FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202107.jpg" title="/images/photos/chinavis2021/cv202107.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202107.jpg"
+                         height="500" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202107.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202105.jpg" title="/images/photos/chinavis2021/cv202105.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202105.jpg"
+                         height="300" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202105.jpg')"></span>
+                    </span>
+                    <div class="name">李童作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202103.jpg" title="/images/photos/chinavis2021/cv202103.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202103.jpg"
+                         height="500" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202103.jpg')"></span>
+                    </span>
+                    <div class="name">潘律翰在海报FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202102.jpg" title="/images/photos/chinavis2021/cv202102.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202102.jpg"
+                         height="800" width="533"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202102.jpg')"></span>
+                    </span>
+                    <div class="name">王云超在论文FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202108.jpg" title="/images/photos/chinavis2021/cv202108.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202108.jpg"
+                         height="400" width="600"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202108.jpg')"></span>
+                    </span>
+                    <div class="name">ZJUTVIS获得最佳综述奖</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202106.jpg" title="/images/photos/chinavis2021/cv202106.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202106.jpg"
+                         height="300" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202106.jpg')"></span>
+                    </span>
+                    <div class="name">王云超作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2021/cv202101.jpg" title="/images/photos/chinavis2021/cv202101.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202101.jpg"
+                         height="400" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2021/cv202101.jpg')"></span>
+                    </span>
+                    <div class="name">李童在论文FastForward</div>
+                </li>
+                
+            </ul>
+            
+            <h4>2021届硕士毕业</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/master21/master202102.jpg" title="/images/photos/master21/master202102.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master21/master202102.jpg"
+                         height="450" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master21/master202102.jpg')"></span>
+                    </span>
+                    <div class="name">21届硕士毕业小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/master21/master202101.png" title="/images/photos/master21/master202101.png">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master21/master202101.png"
+                         height="800" width="450"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master21/master202101.png')"></span>
+                    </span>
+                    <div class="name">21届硕士毕业小组合影</div>
+                </li>
+                
+            </ul>
+            
+            <h4>ChinaVis 2020</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2020/cv202004.png" title="/images/photos/chinavis2020/cv202004.png">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202004.png"
+                         height="300" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202004.png')"></span>
+                    </span>
+                    <div class="name">晚宴</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2020/cv202003.jpeg" title="/images/photos/chinavis2020/cv202003.jpeg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202003.jpeg"
+                         height="450" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202003.jpeg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2020/cv202001.jpeg" title="/images/photos/chinavis2020/cv202001.jpeg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202001.jpeg"
+                         height="300" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202001.jpeg')"></span>
+                    </span>
+                    <div class="name">孙国道老师主持FastForward</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2020/cv202002.jpeg" title="/images/photos/chinavis2020/cv202002.jpeg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202002.jpeg"
+                         height="300" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2020/cv202002.jpeg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+            </ul>
+            
+            <h4>2020届硕士毕业</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/master20/master202001.jpg" title="/images/photos/master20/master202001.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master20/master202001.jpg"
+                         height="400" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master20/master202001.jpg')"></span>
+                    </span>
+                    <div class="name">20届硕士毕业小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/master20/master202002.jpg" title="/images/photos/master20/master202002.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master20/master202002.jpg"
+                         height="533" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/master20/master202002.jpg')"></span>
+                    </span>
+                    <div class="name">20届硕士毕业</div>
+                </li>
+                
+            </ul>
+            
+            <h4>ChinaVis 2019</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201903.jpg" title="/images/photos/chinavis2019/cv201903.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201903.jpg"
+                         height="200" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201903.jpg')"></span>
+                    </span>
+                    <div class="name">孙国道老师在大会报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201905.jpg" title="/images/photos/chinavis2019/cv201905.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201905.jpg"
+                         height="200" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201905.jpg')"></span>
+                    </span>
+                    <div class="name">王慧作挑战赛作品报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201907.jpg" title="/images/photos/chinavis2019/cv201907.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201907.jpg"
+                         height="533" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201907.jpg')"></span>
+                    </span>
+                    <div class="name">常宝峰作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201908.png" title="/images/photos/chinavis2019/cv201908.png">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201908.png"
+                         height="500" width="400"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201908.png')"></span>
+                    </span>
+                    <div class="name">朱素佳作论文报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201902.jpg" title="/images/photos/chinavis2019/cv201902.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201902.jpg"
+                         height="200" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201902.jpg')"></span>
+                    </span>
+                    <div class="name">孙国道老师在大会报告</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201906.jpg" title="/images/photos/chinavis2019/cv201906.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201906.jpg"
+                         height="400" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201906.jpg')"></span>
+                    </span>
+                    <div class="name">挑战赛颁奖</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201901.jpg" title="/images/photos/chinavis2019/cv201901.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201901.jpg"
+                         height="100" width="200"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201901.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2019/cv201904.jpg" title="/images/photos/chinavis2019/cv201904.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201904.jpg"
+                         height="450" width="800"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2019/cv201904.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+            </ul>
+            
+            <h4>ChinaVis 2018</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2018/cv201801.jpg" title="/images/photos/chinavis2018/cv201801.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2018/cv201801.jpg"
+                         height="500" width="300"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2018/cv201801.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2018/cv201802.jpg" title="/images/photos/chinavis2018/cv201802.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2018/cv201802.jpg"
+                         height="300" width="500"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2018/cv201802.jpg')"></span>
+                    </span>
+                    <div class="name">参会人员合影</div>
+                </li>
+                
+            </ul>
+            
+            <h4>ChinaVis 2017</h4>
+            <hr>
+            <ul class="grid" id="target">
+                
+                
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2017/cv201701.jpg" title="/images/photos/chinavis2017/cv201701.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2017/cv201701.jpg"
+                         height="200" width="100"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2017/cv201701.jpg')"></span>
+                    </span>
+                    <div class="name">小组合影</div>
+                </li>
+                
+                
+                
+                
+                <li class="item" id="/images/photos/chinavis2017/cv201702.jpg" title="/images/photos/chinavis2017/cv201702.jpg">
+                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2017/cv201702.jpg"
+                         height="500" width="350"/>
+                    <span class="full">
+                        <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com//images/photos/chinavis2017/cv201702.jpg')"></span>
+                    </span>
+                    <div class="name">挑战赛颁奖</div>
+                </li>
+                
+            </ul>
+            
+        </form>
+
+    </div>
+
+</section>
+<style>
+    .big-div {
+        margin-left: 15%;
+        margin-up: 15%;
+        margin-bottom: 15%;
+        margin-right: 15%;
+        width: 60% display:flex;
+        flex-direction: column;
+    }
+    .mid-div {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .content {
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: 24px;
+        color: rgb(83,83,83);
+    }
+    .small-img {
+        margin-left: 10%;
+        margin-right: 5%;
+        width: 48px;
+        height: 48px;
+    }
+</style>
+
+<style>
+ * {
+	 padding: 0;
+	 margin: 0;
+	 list-style: none;
+	 font-size: 1em;
+	 box-sizing: border-box;
+}
+ .grid {
+	 display: flex;
+	 flex-wrap: wrap;
+	 position: relative;
+	 align-content: flex-start;
+}
+ .grid:after {
+	 content: "";
+	 display: block;
+	 flex-grow: 10;
+	 outline: 2px solid #fff;
+	 position: relative;
+}
+ @media (prefers-color-scheme: dark) {
+	 .grid:after {
+		 outline-color: #000;
+	}
+}
+ .grid .item {
+	 height: 40vh;
+	 flex-grow: 1;
+	 outline: 2px solid #fff;
+	 position: relative;
+	 background-size: 100%;
+}
+ @media (prefers-color-scheme: dark) {
+	 .grid .item {
+		 outline-color: #000;
+	}
+}
+ .grid .item img {
+	 max-height: 100%;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 object-fit: cover;
+	 display: block;
+}
+ .grid .item .open, .grid .item .close {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 text-indent: 150%;
+	 overflow: hidden;
+	 white-space: nowrap;
+}
+ .grid .item .open {
+	 cursor: zoom-in;
+	 background-color: rgba(0, 0, 0, 0);
+	 transition: background-color 0.15s ease-out;
+}
+ .grid .item .open:hover, .grid .item .open:focus {
+	 background-color: rgba(0, 0, 0, .25);
+}
+ .grid .item .open:active {
+	 background-color: rgba(0, 0, 0, .5);
+}
+ .grid .item .close {
+	 display: none;
+	 cursor: zoom-out;
+}
+ .grid .item .full {
+	 display: none;
+}
+ .grid .item .previous, .grid .item .next {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 z-index: 20;
+	 width: 80px;
+	 display: none;
+	 align-items: center;
+	 justify-content: center;
+}
+ .grid .item .previous span, .grid .item .next span {
+	 display: block;
+	 border-radius: 16px;
+	 text-indent: 150%;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 width: 32px;
+	 height: 32px;
+	 background-repeat: no-repeat;
+	 background-position: 8px;
+	 background-size: 16px;
+	 transition: background-color 0.1s linear;
+	 -webkit-backdrop-filter: blur(20px);
+	 -moz-backdrop-filter: blur(20px);
+	 backdrop-filter: blur(20px);
+	 background-color: rgba(200, 200, 200, .25);
+	 background-image: url(../img/icon-left.svg);
+	 pointer-events: none;
+}
+ .grid .item .previous span:hover, .grid .item .next span:hover, .grid .item .previous span:focus, .grid .item .next span:focus {
+	 background-color: rgba(200, 200, 200, .5);
+}
+ .grid .item .previous span:active, .grid .item .next span:active {
+	 background-color: rgba(200, 200, 200, .25);
+}
+ .grid .item .previous:hover span, .grid .item .next:hover span, .grid .item .previous:focus span, .grid .item .next:focus span {
+	 background-color: rgba(200, 200, 200, .5);
+}
+ .grid .item .previous:active span, .grid .item .next:active span {
+	 background-color: rgba(200, 200, 200, .25);
+}
+ .grid .item .next {
+	 right: 0;
+	 left: auto;
+}
+ .grid .item .next span {
+	 background-image: url(../img/icon-right.svg);
+}
+ .grid .item .name {
+	 display: flex;
+	 position: absolute;
+	 right: 4px;
+	 bottom: 12px;
+	 color: #fff;
+	 text-shadow: #000 0 1px 1px, #000 0 2px 4px;
+	 opacity: 1;
+	 font-size: larger;
+	 margin-right: 12px;
+}
+    .name {
+			display: flex;
+			position: absolute;
+			right: 4px;
+			bottom: 12px;
+			color: #fff;
+			text-shadow: #000 0 1px 1px, #000 0 2px 4px;
+			opacity: 1;
+			font-size: larger;
+			margin-right: 12px;
+	}
+ .grid .item .date {
+	 display: flex;
+	 position: absolute;
+	 left: 4px;
+	 bottom: 12px;
+	 color: #fff;
+	 text-shadow: #000 0 1px 1px, #000 0 2px 4px;
+	 opacity: 1;
+	 margin-left: 12px;
+}
+ .grid .item.target {
+	 position: fixed;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 height: 100%;
+	 z-index: 10;
+	 background: #fff;
+	 display: flex;
+	 align-items: center;
+}
+ @media (prefers-color-scheme: dark) {
+	 .grid .item.target {
+		 background: #000;
+	}
+}
+ .grid .item.target .open {
+	 display: none;
+}
+ .grid .item.target .close {
+	 display: block;
+}
+ .grid .item.target img {
+	 object-fit: contain;
+	 animation: fade-in 0.5s ease-out;
+}
+ .grid .item.target .full {
+	 display: flex;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 animation: fade-in 0.5s ease-out;
+}
+ .grid .item.target .full span {
+	 flex-grow: 1;
+	 background-size: contain;
+	 background-repeat: no-repeat;
+	 background-position: center;
+}
+ .grid .item.target .meta {
+	 display: none !important;
+}
+ .grid .item.target .previous, .grid .item.target .next {
+	 display: flex;
+}
+ .links {
+	 position: fixed;
+	 bottom: 24px;
+	 right: 24px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin-left: 16px;
+}
+ .links li {
+	 margin-left: 8px;
+}
+ .links li a {
+	 display: block;
+	 border-radius: 16px;
+	 text-indent: 150%;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 width: 32px;
+	 height: 32px;
+	 background-repeat: no-repeat;
+	 background-position: 8px;
+	 background-size: 16px;
+	 transition: background-color 0.1s linear;
+	 -webkit-backdrop-filter: blur(20px);
+	 -moz-backdrop-filter: blur(20px);
+	 backdrop-filter: blur(20px);
+	 background-color: rgba(200, 200, 200, .25);
+}
+ .links li a:hover, .links li a:focus {
+	 background-color: rgba(200, 200, 200, .5);
+}
+ .links li a:active {
+	 background-color: rgba(200, 200, 200, .25);
+}
+ .links li.github a {
+	 background-image: url(../img/icon-github.svg);
+}
+ .links li.rss a {
+	 background-image: url(../img/icon-rss.svg);
+}
+ .links li.link a {
+	 text-indent: 0;
+	 width: auto;
+	 font-size: 13px;
+	 line-height: 32px;
+	 text-transform: uppercase;
+	 padding: 0 12px;
+	 color: rgba(0, 0, 0, .75);
+	 font-weight: 600;
+	 text-decoration: none;
+}
+ .four-oh-four {
+	 flex-grow: 1;
+	 display: flex;
+	 flex-direction: column;
+	 height: 100%;
+	 padding: 64px;
+	 align-items: center;
+	 justify-content: center;
+	 text-align: center;
+}
+ .four-oh-four img {
+	 width: 64px;
+	 vertical-align: bottom;
+	 margin-bottom: 24px;
+}
+ .four-oh-four h1 {
+	 font-size: 32px;
+	 line-height: 48px;
+	 font-weight: 700;
+}
+ .four-oh-four p {
+	 margin-bottom: 32px;
+}
+ .four-oh-four a {
+	 display: block;
+	 border-radius: 16px;
+	 text-indent: 150%;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 width: 32px;
+	 height: 32px;
+	 background-repeat: no-repeat;
+	 background-position: 8px;
+	 background-size: 16px;
+	 transition: background-color 0.1s linear;
+	 -webkit-backdrop-filter: blur(20px);
+	 -moz-backdrop-filter: blur(20px);
+	 backdrop-filter: blur(20px);
+	 background-color: rgba(200, 200, 200, .25);
+	 text-indent: 0;
+	 width: auto;
+	 font-size: 13px;
+	 line-height: 32px;
+	 text-transform: uppercase;
+	 padding: 0 12px;
+	 color: rgba(0, 0, 0, .75);
+	 font-weight: 600;
+	 text-decoration: none;
+}
+ .four-oh-four a:hover, .four-oh-four a:focus {
+	 background-color: rgba(200, 200, 200, .5);
+}
+ .four-oh-four a:active {
+	 background-color: rgba(200, 200, 200, .25);
+}
+ @media (max-aspect-ratio: 1) {
+	 .grid .item {
+		 height: 30vh;
+	}
+}
+ @media (max-height: 480px) {
+	 .grid .item {
+		 height: 80vh;
+	}
+}
+ @media (max-aspect-ratio: 1) and (max-width: 480px) {
+	 .grid {
+		 flex-direction: row;
+	}
+	 .grid .item {
+		 height: auto;
+		 width: 100%;
+	}
+	 .grid .item img {
+		 width: 100%;
+		 height: auto;
+	}
+	 .grid .item .previous, .grid .item .next {
+		 width: 25vw;
+		 max-width: auto;
+	}
+	 .grid .item .previous span, .grid .item .next span {
+		 display: none;
+	}
+	 .grid .item .previous {
+		 cursor: w-resize;
+	}
+	 .grid .item .next {
+		 cursor: e-resize;
+	}
+}
+ @keyframes fade-in {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+</style>
+
+
+    </div>
+<footer class="footer">
+    <div class="uk-container">
+
+
+        <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-margin-small-bottom">
+                <h5 class="uk-margin-small-bottom">邮件</h5>
+                <a href="mailto:guodao@zjut.edu.cn">guodao [at] zjut.edu.cn</a>
+
+            </div>
+            <div>
+                <h5 class="uk-margin-small-bottom">地址</h5>
+                <div uk-lightbox>
+                    <a href="https://map.baidu.com/search/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E7%95%99%E5%92%8C%E8%B7%AF288%E5%8F%B7%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%B1%8F%E5%B3%B0%E6%A0%A1%E5%8C%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E6%A5%BCc516/" data-caption="浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516"
+                       data-type="iframe">浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区计算机大楼C516</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+            <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+            2022
+            ZJUT VIS
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS Plugins -->
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit.min.js"></script>
+
+<script src="https://zjutvis-1253917436.cos.ap-shanghai.myqcloud.com/cdn/uikit/uikit-icons.min.js"></script>
+
+
+
+<script type="text/javascript">
+var sc_project=12572472;
+var sc_invisible=1;
+var sc_security="5046b971";
+
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics"
+                              href="https://statcounter.com/" target="_blank"><img
+          class="statcounter"
+          src="https://c.statcounter.com/12572472/0/5046b971/1/"
+          alt="Web Analytics"></a></div>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>相册 on ZJUTVIS</title>
+    <link>http://www.zjutvis.org/photo/</link>
+    <description>Recent content in 相册 on ZJUTVIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="http://www.zjutvis.org/photo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChinaVis 2022</title>
+      <link>http://www.zjutvis.org/photo/chinavis2022/</link>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021届博士毕业</title>
+      <link>http://www.zjutvis.org/photo/phd21/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/phd21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChinaVis 2021</title>
+      <link>http://www.zjutvis.org/photo/chinavis2021/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021届硕士毕业</title>
+      <link>http://www.zjutvis.org/photo/master21/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/master21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChinaVis 2020</title>
+      <link>http://www.zjutvis.org/photo/chinavis2020/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2020届硕士毕业</title>
+      <link>http://www.zjutvis.org/photo/master20/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/master20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChinaVis 2019</title>
+      <link>http://www.zjutvis.org/photo/chinavis2019/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChinaVis 2018</title>
+      <link>http://www.zjutvis.org/photo/chinavis2018/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChinaVis 2017</title>
+      <link>http://www.zjutvis.org/photo/chinavis2017/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.zjutvis.org/photo/chinavis2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

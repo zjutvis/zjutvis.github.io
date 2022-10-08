@@ -50,6 +50,11 @@ googleAnalytics = ""
   URL = "members"
   weight=4
 
+  [[menu.main]]
+  name = "相册"
+  URL = "photo"
+  weight=5
+
 
 [params]
 home = "首页"
