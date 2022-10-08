@@ -45,7 +45,7 @@ src = '/images/photos/chinavis2022/cv202215.jpg'
 description = "张扬在挑战赛FastForward"
 [[image]]
 src = '/images/photos/chinavis2022/cv202216.jpg'
-description = "李童在志愿者中"
+description = "李童参与志愿者"
 [[image]]
 src = '/images/photos/chinavis2022/cv202217.jpg'
 description = "彩虹土族园"
