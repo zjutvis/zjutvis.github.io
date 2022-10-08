@@ -24,7 +24,8 @@
                 {{$thumbnail := $photo}}
                 {{$size := shuffle (index (shuffle $size_list) 0)}}
                 <li class="item" id="{{.src}}" title="{{.src}}">
-                    <img class="lazyload" src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.src}}"
+                    <img class="lazyload" src="data:image/png;base64"
+                         data-src="https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.src}}"
                          height="{{index $size 1}}" width="{{index $size 0}}"/>
                     <span class="full">
                         <span style="background-image: url('https://zjutvis-1253917436.cos-website.ap-shanghai.myqcloud.com/{{.src}}')"></span>

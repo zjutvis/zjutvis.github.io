@@ -18,15 +18,15 @@ src = '/images/photos/chinavis2021/cv202104.jpg'
 description = "朱子昊在海报FastForward"
 [[image]]
 src = '/images/photos/chinavis2021/cv202105.jpg'
-description = "李童作论文报告"
+description = "王云超作论文报告"
 [[image]]
 src = '/images/photos/chinavis2021/cv202106.jpg'
-description = "王云超作论文报告"
+description = "李童作论文报告"
 [[image]]
 src = '/images/photos/chinavis2021/cv202107.jpg'
 description = "小组合影"
 [[image]]
 src = '/images/photos/chinavis2021/cv202108.jpg'
-description = "ZJUTVIS获得最佳综述奖"
+description = "ZJUTVIS获得最佳综述论文"
 
 +++

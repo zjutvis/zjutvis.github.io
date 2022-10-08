@@ -9,10 +9,7 @@ src = '/images/photos/chinavis2019/cv201901.jpg'
 description = "小组合影"
 [[image]]
 src = '/images/photos/chinavis2019/cv201902.jpg'
-description = "孙国道老师在大会报告"
-[[image]]
-src = '/images/photos/chinavis2019/cv201903.jpg'
-description = "孙国道老师在大会报告"
+description = "孙国道老师作圆桌论坛分享"
 [[image]]
 src = '/images/photos/chinavis2019/cv201904.jpg'
 description = "小组合影"
